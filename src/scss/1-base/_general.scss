@@ -1,0 +1,46 @@
+*, *::before, *::before{
+  box-sizing: border-box;
+}
+
+// Sets the base font-size to the base to use nicely on REM units
+html{
+  font-size: 62.5%;
+}
+
+body{
+  @include font-size(1.6);
+  font-family: $font;
+  background: #f7f7f7;
+}
+
+::selection{
+  background: lighten($main-color, 12%);
+  color: $white;
+  }
+
+img{
+  max-width: 100%;
+}
+
+.is-hidden{
+  position: absolute;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.icon{
+  display: block;
+  width: 100%;
+  fill: currentColor;
+  stroke: currentColor;
+  margin: 0 auto;
+}
+
+
+.slick-slider {
+  user-select: text;
+}
+.slick-list.draggable {
+  user-select: none;
+}

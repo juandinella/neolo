@@ -1,0 +1,203 @@
+.plus{
+  text-align: center;
+  padding: 30px 0;
+  background: white;
+  position: relative;
+
+  &:after{
+    position:absolute;
+    top:100%;
+    left:0;
+    content:'';
+    height:0;
+    width:0;
+    border-left:100vw solid white;
+    border-bottom:10vw solid transparent;
+    border-top:0px solid transparent;
+    overflow:hidden;
+  }
+
+  @include breakpoint(sm) {
+    padding: 66px 0;
+  }
+
+  h2{
+    margin: 25px 0 80px 0;
+  }
+}
+
+.plus-main{
+  padding-bottom: 25px;
+}
+
+.plus-block{
+  margin-bottom: 30px;
+
+  @include breakpoint(md) {
+    margin-bottom: 55px;
+  }
+}
+
+.plus-img{
+  float: left;
+
+  @include breakpoint(sm) {
+    float: none;
+  }
+
+  @include breakpoint(md) {
+    float: left;
+  }
+
+  svg{
+    display: block
+  }
+}
+
+.plus-icon{
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: #E4744E;
+  float: left;
+  margin: 0 10px 50px 0;
+
+  @include breakpoint(sm) {
+    float: none;
+    margin: 0 auto;
+  }
+
+  @include breakpoint(md) {
+    float: left;
+    margin: 0 10px 50px 0;
+  }
+
+
+  .icon{
+    width: 60px;
+    height: 65px;
+    color: white;
+  }
+
+  .cloud{
+    width: 36px;
+  }
+
+  .mobile{
+    width: 25px;
+  }
+
+  .backup{
+    width: 38px;
+  }
+
+  .cPanel{
+    width: 44px;
+  }
+
+  .stats{
+    width: 42px;
+  }
+
+  .online{
+    width: 50px;
+  }
+
+  .apps{
+    width: 44px;
+  }
+
+  .dinero{
+    width: 38px;
+  }
+}
+
+.plus-content{
+  margin-left: 50px;
+  text-align: left;
+  padding-right: 0;
+
+  @include breakpoint(sm) {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  @include breakpoint(md) {
+    text-align: left;
+    margin-left: 50px;
+    padding-right: 25px;
+  }
+
+
+  h6{
+    font-family: $fontBold;
+    margin-top: 0;
+
+    @include breakpoint(sm) {
+      margin-top: 10px;
+    }
+
+    @include breakpoint(md) {
+      margin-top: 0;
+    }
+  }
+
+  p{
+    @include font-size(1.4,2.0);
+  }
+}
+
+/**
+* Plus More
+*/
+
+
+.plus-more{
+  h2{
+    position: relative;
+    display: inline-block;
+
+    &:before{
+      content: '';
+      position: absolute;
+      top: -50px;
+      left: 0;
+      right: 0;
+      width: 300px;
+      background-color: $black;
+      height: 1px;
+      margin: 0 auto;
+    }
+  }
+
+  .plus-img{
+    float: left;
+
+    @include breakpoint(sm) {
+      float: none;
+    }
+
+    .plus-icon{
+      float: left;
+      margin: 0 auto;
+
+      @include breakpoint(sm) {
+        float: none;
+      }
+    }
+  }
+
+  .plus-content{
+    margin: 0;
+    float: none;
+    text-align: left;
+    margin-top: 0;
+    margin-left: 75px;
+
+    @include breakpoint(sm) {
+      text-align: center;
+      margin-top: 20px;
+      margin-left: 0;
+    }
+  }
+}

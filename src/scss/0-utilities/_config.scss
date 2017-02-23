@@ -1,0 +1,49 @@
+// =======================================
+// =            Global Config            =
+// =======================================
+
+$fontRegular: "dinregular", Helvetica, Arial, sans-serif;
+$fontMedium: "dinmedium", Helvetica, Arial, sans-serif;
+$fontBold:  "dinbold", Helvetica, Arial, sans-serif;
+$fontCondensed: "dincond-boldbold", Helvetica, Arial, sans-serif;
+
+
+/*$font: 'Work Sans', sans-serif;*/
+$font: $fontRegular;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$bold: 700;
+
+
+// Colors
+$white: white;
+$black: #4C4C4C;
+$gray: #F7F7F7;
+$orange: #E4744E;
+$green: #A3C220;
+$green-secondary: #87CC6F;
+
+$border-gray: #E4E4E4;
+
+$main-color: $green;
+
+$color-accent: invert($main-color);
+$color-shadow: rgba($black, 0.2);
+
+// Transitions
+$trns-duration: 0.225s ease;
+
+// Breakpoints
+
+$breakpoints: (
+  xs: 30em,
+  sm: 48em,
+  md: 64em,
+  lg: 75em,
+  xl: 88em,
+  xx: 120em
+) !default;
+
+$columns: 12;
+$column-gutter: 20px;

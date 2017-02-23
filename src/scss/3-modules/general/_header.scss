@@ -1,0 +1,170 @@
+.mainHeader{
+  padding: 15px 0;
+  position: relative;
+  background-color: white;
+}
+
+.header-placeholder{
+  height: 81px;
+  display: none;
+}
+
+.mainNav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainNav-logo{
+  margin-right: auto;
+
+  img{
+    transition: all 0.3s ease;
+    max-width: 180px;
+
+    @include breakpoint(xs) {
+      max-width: 200px;
+    }
+
+    @include breakpoint(md) {
+      max-width: 100%;
+    }
+  }
+}
+
+
+
+/**
+* Menu
+*/
+
+.mainNav-link{
+  margin-right: 5px;
+  color: $black;
+  display: none;
+  padding: 4px 12px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+
+  @include breakpoint(md) {
+    display: block;
+  }
+
+  @include breakpoint(lg) {
+    margin-right: 10px;
+  }
+
+  &:last-of-type{
+    margin-right: 0;
+  }
+
+  &:hover{
+    color: $orange;
+  }
+}
+
+.menuSelected{
+  color: $orange;
+}
+
+.mainNav-menuMobile{
+  display: block;
+  cursor: pointer;
+
+  @include breakpoint(md) {
+    display: none;
+  }
+}
+
+.menuText{
+  display: none;
+  @include breakpoint(xs) {
+    display: inline-block;
+  }
+}
+
+
+/**
+* Header Fixed
+*/
+
+.sticky{
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);
+
+  .dropdown{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);
+  }
+
+  .mainNav-logo{
+
+    img{
+      max-width: 180px;
+
+      @include breakpoint(md) {
+        max-width: 200px;
+      }
+    }
+  }
+}
+
+.header-placeholder.block{
+  display: block;
+}
+
+/**
+* Nav Mobile
+*/
+.mainNav-menuMobile_toggle{
+  float: right;
+  margin-left: 10px;
+
+  .line{
+    width: 30px;
+    height: 2px;
+    background-color: $green;
+    display: block;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.mainNav-menuMobile.is-active{
+  .line{
+    &:nth-child(1){
+      transform: translateY(7px) rotate(45deg);
+    }
+    &:nth-child(2){
+      opacity: 0;
+    }
+
+    &:nth-child(3){
+      transform: translateY(-7px) rotate(-45deg);
+    }
+  }
+}
+
+
+.mainNav-mobile{
+  background-color: #FFF;
+  position: absolute;
+  top: 68px;
+  z-index: 2;
+  display: none;
+  border-top: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);
+
+  @include breakpoint(sm) {
+    top: 71px;
+  }
+
+  @include breakpoint(md) {
+    display: none!important;
+  }
+}

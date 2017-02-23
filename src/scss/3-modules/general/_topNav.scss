@@ -1,0 +1,85 @@
+.topNav{
+  background-color: $black;
+
+  .container{
+    padding: 10px $column-gutter / 2;
+
+    .col-xs-12{
+      padding: 0;
+
+      @include breakpoint(xs) {
+        padding: 0 10px;
+      }
+    }
+  }
+}
+
+.topNav-country{
+  float: left;
+
+  img{
+    vertical-align: bottom;
+  }
+}
+
+.topNav-right{
+  float: right;
+
+  ul{
+    li{
+      display: inline-block;
+
+      a{
+        color: #FFF;
+        @include font-size(1.4,1.4);
+      }
+    }
+  }
+}
+
+
+.line-hover {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+
+  &:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: white;
+    transition: width .3s ease;
+  }
+
+  &:hover{
+    &:after{
+      width: 100%;
+    }
+  }
+}
+
+.login{
+  border: 1px solid #FFF;
+  border-radius: 5px;
+  margin-left: 6px;
+
+  @include breakpoint(xs) {
+    margin-left: 20px;
+  }
+
+  a{
+    display: block;
+    padding: 8px 14px;
+    transition: background-color 0.225s ease;
+    border-radius: 5px;
+
+    @include breakpoint(xs) {
+      padding: 8px 16px;
+    }
+
+    &:hover{
+      background-color: $orange;
+    }
+  }
+}
