@@ -11,7 +11,7 @@
 ## Instalar todas las dependecias
 
 ```
-yarn start
+yarn & bower i
 ```
 
 ## Modo de uso
