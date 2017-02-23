@@ -49,6 +49,7 @@
 
     @include breakpoint(sm) {
       right: 5%;
+      left: auto;
     }
 
     @include breakpoint(lg) {
