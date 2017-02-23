@@ -1,6 +1,5 @@
-![Neolo](penny.png)
+![Neolo](neolo.png)
 
-#### Tiny but powerful
 
 ===
 
