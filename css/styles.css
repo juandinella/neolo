@@ -3798,6 +3798,7 @@ p
     .clients .arrowNext
     {
         right: 5%;
+        left: auto;
     }
 
     .clients-slide:after
