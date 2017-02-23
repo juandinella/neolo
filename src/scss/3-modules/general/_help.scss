@@ -11,7 +11,7 @@
     display: block;
     vertical-align: middle;
     margin-right: 0;
-    text-shadow: 0 1px 1px rgba(0,0,0,0.25);
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.75);
     margin-bottom: 30px;
 
     @include breakpoint(md) {
@@ -24,5 +24,39 @@
   a{
     color: white;
     display: inline-block;
+  }
+
+  .btn-border{
+    background-color: white;
+    color: $black;
+    transition: all 0.225s ease;
+
+    &:hover{
+      background-color: $orange;
+      border-color: $orange;
+      color: white;
+    }
+  }
+}
+
+
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  .help{
+    h5{
+      text-shadow: 0 1px 1px rgba(0,0,0,0.25);
+    }
+
+    .btn-border{
+      background-color: transparent;
+      color: white;
+
+      &:hover{
+        background-color: white;
+        color: $green-secondary;
+        border-color: white;
+      }
+    }
   }
 }
