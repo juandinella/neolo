@@ -82,8 +82,8 @@
 */
 +(function ($) {
 
-  $('.hasMenu').click(function(e) {
-    var dropdown = $('#dropdown-' + e.target.id);
+  $('.hasMenu').click(function() {
+    var dropdown = $('#dropdown-' + $(this).attr("id"));
     $(this).toggleClass('is-active');
     $(this).removeClass('menuSelected');
     if (dropdown.hasClass('is-active')) {
