@@ -839,6 +839,7 @@ h1
 
 h2
 {
+    font-family: 'dinmedium', Helvetica, Arial, sans-serif;
     font-size: 36px;
     font-size: 3.6rem;
     line-height: 42px;
@@ -879,6 +880,36 @@ p
     -webkit-font-smoothing: antialiased;
             font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+}
+
+.btn
+{
+    display: table;
+
+    min-width: 270px;
+    margin: 25px auto;
+    padding: 12px 30px;
+
+    transition: background-color .3s ease;
+
+    color: white;
+    border-radius: 50px;
+}
+
+.btn_orange
+{
+    color: white;
+    background-color: #e4744e;
+}
+
+.btn_orange:hover
+{
+    background-color: #e16338;
+}
+
+.btn_orange:hover .chevron-right
+{
+    left: 10px;
 }
 
 .btn-border
@@ -2329,6 +2360,8 @@ p
     padding: 50px 0;
 
     text-align: center;
+
+    background-color: white;
 }
 
 .faqBlocks
@@ -2642,6 +2675,34 @@ p
     content: '';
 }
 
+.features
+{
+    padding: 150px 0 75px 0;
+
+    text-align: center;
+
+    background-color: white;
+}
+
+.features header
+{
+    margin-bottom: 50px;
+}
+
+.features header h2
+{
+    margin-bottom: 10px;
+}
+
+.features h3
+{
+    font-family: 'dinmedium', Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    font-size: 2.2rem;
+    line-height: 33px;
+    line-height: 3.3rem;
+}
+
 .hero
 {
     position: relative;
@@ -2686,30 +2747,6 @@ p
 .heroDesktop
 {
     display: none;
-}
-
-.btn
-{
-    display: table;
-
-    margin: 25px auto;
-    padding: 12px 30px;
-
-    transition: background-color .3s ease;
-
-    color: white;
-    border-radius: 50px;
-    background-color: #e4744e;
-}
-
-.btn:hover
-{
-    background-color: #e16338;
-}
-
-.btn:hover .chevron-right
-{
-    left: 10px;
 }
 
 .chevron-right
@@ -2834,6 +2871,24 @@ p
     display: none;
 
     margin-bottom: -5rem;
+}
+
+.heroBlocks:after
+{
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    overflow: hidden;
+
+    width: 0;
+    height: 0;
+
+    content: '';
+
+    border-top: 0 solid transparent;
+    border-bottom: 10vw solid transparent;
+    border-left: 100vw solid #f7f7f7;
 }
 
 .heroBlock
@@ -2973,9 +3028,7 @@ p
 
 .home-block_content .btn
 {
-    width: 230px;
     margin-left: 0;
-    padding: 10px 75px;
 
     text-align: center;
 }
@@ -3015,7 +3068,19 @@ p
 {
     padding: 50px 0;
 
+    text-align: center;
+
     background-color: white;
+}
+
+.partners header
+{
+    margin-bottom: 75px;
+}
+
+.partners header h2
+{
+    font-family: 'dinregular', Helvetica, Arial, sans-serif;
 }
 
 .partners-list
@@ -3051,11 +3116,17 @@ p
     text-align: center;
 
     background: white;
+    background-color: #f7f7f7;
 }
 
 .clients header
 {
     margin-bottom: 45px;
+}
+
+.clients header h2
+{
+    margin-bottom: 10px;
 }
 
 .clients .slick-slide:focus,
@@ -3697,7 +3768,7 @@ p
 
     .faq
     {
-        padding: 150px 0 50px 0;
+        padding: 75px 0 50px 0;
     }
 
     .faqBlock-question h4
