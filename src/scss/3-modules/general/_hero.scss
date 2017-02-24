@@ -1,0 +1,69 @@
+.hero{
+  height: 500px;
+  position: relative;
+  overflow-x: hidden;
+  text-align: center;
+
+  h1,
+  h2,
+  p{
+    color: white;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+  }
+
+  h2{
+    margin: 5px 0 10px 0;
+  }
+
+  p{
+    @include font-size(1.4,2.2);
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.hero-whiteBox{
+  width: 450px;
+  background-color: white;
+  padding: 20px;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin-left: 0;
+  margin-top: 50px;
+
+  @include breakpoint(md) {
+    margin-left: 50px;
+  }
+
+  h1,h2,p{
+    color: black;
+    text-shadow: none;
+  }
+
+  h1{
+    @include font-size(4,5);
+    font-size: 40px;
+    text-align: left;
+    font-weight: 600;
+  }
+
+  h2{
+    font-size: 24px;
+    text-align: left;
+    line-height: 1;
+    margin-top: 10px;
+  }
+
+  p{
+    text-align: left;
+  }
+}
+
+.hero-section{
+  height: 550px;
+
+  .hero-whiteBox{
+
+  }
+}
