@@ -3,9 +3,14 @@
   padding: 40px 0 0 0;
   background: white;
   overflow: hidden;
+  background-color: $gray;
 
   header{
     margin-bottom: 45px;
+
+    h2{
+      margin-bottom: 10px;
+    }
   }
 
   .slick-slide {

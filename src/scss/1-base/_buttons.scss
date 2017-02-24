@@ -1,3 +1,27 @@
+.btn{
+  display: table;
+  margin: 25px auto;
+  padding: 12px 30px;
+  transition: background-color .3s ease;
+  color: white;
+  border-radius: 50px;
+  min-width: 270px;
+}
+
+
+.btn_orange{
+  background-color: $orange;
+  color: white;
+
+  &:hover{
+    background-color: darken($orange, 5%);
+
+    .chevron-right{
+      left: 10px;
+    }
+  }
+}
+
 .btn-border{
   border-radius: 100px;
   border: 3px solid white;

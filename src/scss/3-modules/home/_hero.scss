@@ -35,25 +35,6 @@
   }
 }
 
-.btn{
-  background-color: $orange;
-  border-radius: 50px;
-  color: white;
-  padding: 12px 30px;
-  transition: background-color 0.3s ease;
-  display: table;
-  margin: 25px auto;
-
-  &:hover{
-    background-color: darken($orange, 5%);
-
-    .chevron-right{
-      left: 10px;
-    }
-  }
-}
-
-
 .chevron-right{
   height: 10px;
   width: 10px;
