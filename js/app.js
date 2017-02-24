@@ -81,16 +81,15 @@
 * Dropdown
 */
 +(function ($) {
-  var hasMenu = $('.hasMenu');
-  var dropdown = $('.dropdown');
 
-  hasMenu.on('click', function(){
-    dropdown.toggleClass('is-active');
-    hasMenu.removeClass('menuSelected');
+  $('.hasMenu').click(function(e) {
+    var dropdown = $('#dropdown-' + e.target.id);
+    $(this).toggleClass('is-active');
+    $(this).removeClass('menuSelected');
     if (dropdown.hasClass('is-active')) {
-      hasMenu.addClass('menuSelected');
+      $(this).addClass('menuSelected');
     }
-  })
+  });
 })(jQuery);
 
 
