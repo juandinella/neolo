@@ -13,7 +13,9 @@
   }
 
   h1{
-    margin-bottom: 15px;
+    margin-bottom: 25px;
+    @include font-size(3.8,4);
+    text-align: center;
   }
 
   h2{
@@ -23,6 +25,7 @@
 
   .btn{
     margin-bottom: 4px;
+    text-align: center;
   }
 
   .slick-dots{
@@ -38,6 +41,15 @@
 }
 
 .heroMobile-slide_img{
+  height: 140px;
+
+  @include breakpoint(xs) {
+    height: 300px;
+  }
+}
+
+
+.hero-section_mobile-img{
   height: 140px;
 
   @include breakpoint(xs) {

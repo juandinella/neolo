@@ -1,13 +1,13 @@
-section.pricing#pricingTable
+section.pricing
   .container
     .row
-      .col-md-10.col-md-offset-1
+      .col-md-12
         header
           h2 Tu plan, a medida
           p Dentro de estos planes de hosting está el tuyo, con el servicio que deseás y al precio que buscás
         .row
           .col-xs-12
-            .pricing-table
+            .pricing-table.pricing-table_four.pricing-table_noFeatured
               .pricing-item.plan-0
                 header
                   h4 Plan 0
@@ -29,7 +29,7 @@ section.pricing#pricingTable
                   p Desde #[span $31]
                   a.btn(href="", title="") Comprar
 
-              .pricing-item.pricing-item_featured.plan-1
+              .pricing-item.plan-1
                 header
                   h4 Plan 1
                 section
@@ -64,20 +64,33 @@ section.pricing#pricingTable
                   p Desde #[span $57]
                   a.btn(href="", title="") Comprar
 
+              .pricing-item.plan-ilimitado
+                header
+                  h4 Plan ilimitado
+                section
+                  ul
+                    li #[span 1] dominio
+                      svg(class="icon info")
+                        use(xlink:href="#info")
+                    li #[span 15gb] espacio
+                      svg(class="icon info")
+                        use(xlink:href="#info")
+                    li #[span 30gb] de transferencia
+                      svg(class="icon info")
+                        use(xlink:href="#info")
+                footer
+                  p Desde #[span $57]
+                  a.btn(href="", title="") Comprar
+
         .row
           .col-xs-12
             p.iva *Al precio hay que incluirle el IVA 21%
         .row
           .col-xs-12
             p.allPlans All plans include Unmetered Bandwidth, Unmetered Disk Space, FREE Migrations, Disaster Recovery Backups, and 24x7 Support.
+
         .row
-          .col-xs-12
-            a.btn.btn_orange(href="", title="")
-              span Ver tabla comparativa de hosting
-              svg(class="icon chevron-right")
-                use(xlink:href="#chevron-right")
-        .row
-          .col-xs-12
+          .col-md-8.col-md-offset-2
             a.off(href="", title="")
               img(src='img/icon-save.png', srcset='img/icon-save.png 1x, img/icon-save@2x.png 2x', alt='')
-              h3 50% OFF el primer año con el código #[span "NUEVACUENTA"]
+              h3 10% OFF por pago anual

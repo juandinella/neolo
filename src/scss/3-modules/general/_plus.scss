@@ -13,6 +13,27 @@
   }
 }
 
+.plus-only{
+  @include breakpoint(sm) {
+    padding-bottom: 0;
+  }
+}
+
+.plus-border{
+  &:after{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    content: "";
+    border-top: 0 solid transparent;
+    border-bottom: 10vw solid transparent;
+    border-left: 100vw solid $gray;
+  }
+}
+
 .plus-main{
   padding-bottom: 25px;
 }
@@ -68,6 +89,10 @@
 
   .cloud{
     width: 36px;
+  }
+
+  .atom{
+    width: 35px;
   }
 
   .mobile{

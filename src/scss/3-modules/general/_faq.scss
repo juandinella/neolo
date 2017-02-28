@@ -11,6 +11,19 @@
   }
 }
 
+.faq-border{
+  padding: 50px 0;
+
+  @include breakpoint(xs) {
+    padding: 75px 0;
+  }
+  @include breakpoint(sm) {
+    padding: 150px 0 50px 0;
+  }
+}
+
+
+
 .faqBlocks{
   margin-top: 50px;
 }
