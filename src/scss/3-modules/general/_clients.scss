@@ -1,7 +1,6 @@
 .clients{
   text-align: center;
   padding: 40px 0 0 0;
-  background: white;
   overflow: hidden;
   background-color: $gray;
 
@@ -69,6 +68,10 @@
       left: 18%;
     }
   }
+}
+
+.clients_white{
+  background-color: white;
 }
 
 .clients-slider{

@@ -2,9 +2,24 @@
   text-align: center;
   background-color: white;
   padding: 100px 0 20px 0;
+  position: relative;
+  z-index: 2;
+
+  &:after{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    content: "";
+    border-top: 0 solid transparent;
+    border-bottom: 10vw solid transparent;
+    border-left: 100vw solid white;
+  }
 
   @include breakpoint(sm) {
-    padding: 100px 0 80px 0;
+    padding: 100px 0 40px 0;
   }
 
   h2{

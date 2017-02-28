@@ -1,11 +1,11 @@
 .plus{
   text-align: center;
   padding: 30px 0;
-  background-color: white;
+  background-color: $gray;
   position: relative;
 
   @include breakpoint(sm) {
-    padding: 66px 0;
+    padding: 150px 0 66px 0;
   }
 
   h2{

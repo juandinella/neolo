@@ -1,7 +1,9 @@
 .pricing{
   text-align: center;
   margin-top: 25px;
-
+  position: relative;
+  z-index: 3;
+  
   @include breakpoint(md) {
     margin-top: 50px;
   }

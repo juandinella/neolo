@@ -81,12 +81,11 @@
 * Dropdown
 */
 +(function ($) {
-
   $('.hasMenu').click(function() {
-    var dropdown = $('#dropdown-' + $(this).attr("id"));
-    $(this).toggleClass('is-active');
+    var dropdown = '#dropdown-' + $(this).attr('id');
+    $(dropdown).toggleClass('is-active');
     $(this).removeClass('menuSelected');
-    if (dropdown.hasClass('is-active')) {
+    if ($(dropdown).hasClass('is-active')) {
       $(this).addClass('menuSelected');
     }
   });
