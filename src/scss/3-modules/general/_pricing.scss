@@ -103,13 +103,8 @@
 
   .btn{
     padding: 10px 80px;
-    background-color: $main-color;
     margin: 0 auto;
     min-width: 50%;
-
-    &:hover{
-      background-color: darken($main-color,5%);
-    }
   }
 }
 
@@ -126,6 +121,24 @@
     @include breakpoint(md) {
       flex: 0 24%;
       margin-bottom: 0;
+    }
+  }
+}
+
+.pricing-table_six{
+  .pricing-item{
+
+    @include breakpoint(sm) {
+      flex: 0 49%;
+      margin-bottom: 25px;
+    }
+
+    @include breakpoint(md) {
+      flex: 0 32%;
+
+      &:nth-last-child(-n+3){
+        margin-bottom: 0;
+      }
     }
   }
 }
@@ -154,26 +167,197 @@
   }
 }
 
-.plan-0{
+/**
+* Table colors
+*/
+
+$table-1: #B2DB21;
+$table-2: #AAD72E;
+$table-3: #A0D23B;
+$table-4: #97CD48;
+$table-5: #8EC955;
+$table-6: #85C461;
+$table-7: #7CC06F;
+$table-8: #73BB7B;
+$table-9: #6AB789;
+$table-10: #61B396;
+$table-11: #58AEA2;
+$table-12: #4EA9B1;
+
+.table-1{
   header{
-    background-color: $main-color;
+    background-color: $table-1;
+  }
+  footer{
+    .btn{
+      background-color: $table-1;
+
+      &:hover{
+        background-color: darken($table-1, 10%);
+      }
+    }
   }
 }
 
-.plan-ilimitado{
+.table-2{
   header{
-    background-color: #4EA9B1;
+    background-color: $table-2;
+  }
+  footer{
+    .btn{
+      background-color: $table-2;
+
+      &:hover{
+        background-color: darken($table-2, 10%);
+      }
+    }
   }
 }
 
-
-.plan-1{
+.table-3{
   header{
-    background-color: #80C269;
+    background-color: $table-3;
+  }
+  footer{
+    .btn{
+      background-color: $table-3;
+
+      &:hover{
+        background-color: darken($table-3, 10%);
+      }
+    }
   }
 }
 
+.table-4{
+  header{
+    background-color: $table-4;
+  }
+  footer{
+    .btn{
+      background-color: $table-4;
 
+      &:hover{
+        background-color: darken($table-4, 10%);
+      }
+    }
+  }
+}
+
+.table-5{
+  header{
+    background-color: $table-5;
+  }
+  footer{
+    .btn{
+      background-color: $table-5;
+
+      &:hover{
+        background-color: darken($table-5, 10%);
+      }
+    }
+  }
+}
+
+.table-6{
+  header{
+    background-color: $table-6;
+  }
+  footer{
+    .btn{
+      background-color: $table-6;
+
+      &:hover{
+        background-color: darken($table-6, 10%);
+      }
+    }
+  }
+}
+
+.table-7{
+  header{
+    background-color: $table-7;
+  }
+  footer{
+    .btn{
+      background-color: $table-7;
+
+      &:hover{
+        background-color: darken($table-7, 10%);
+      }
+    }
+  }
+}
+.table-8{
+  header{
+    background-color: $table-8;
+  }
+  footer{
+    .btn{
+      background-color: $table-8;
+
+      &:hover{
+        background-color: darken($table-8, 10%);
+      }
+    }
+  }
+}
+.table-9{
+  header{
+    background-color: $table-9;
+  }
+  footer{
+    .btn{
+      background-color: $table-9;
+
+      &:hover{
+        background-color: darken($table-9, 10%);
+      }
+    }
+  }
+}
+.table-10{
+  header{
+    background-color: $table-10;
+  }
+  footer{
+    .btn{
+      background-color: $table-10;
+
+      &:hover{
+        background-color: darken($table-10, 10%);
+      }
+    }
+  }
+}
+.table-11{
+  header{
+    background-color: $table-11;
+  }
+  footer{
+    .btn{
+      background-color: $table-11;
+
+      &:hover{
+        background-color: darken($table-11, 10%);
+      }
+    }
+  }
+}
+.table-12{
+  header{
+    background-color: $table-12;
+  }
+  footer{
+    .btn{
+      background-color: $table-12;
+
+      &:hover{
+        background-color: darken($table-12, 10%);
+      }
+    }
+  }
+}
 
 .info{
   width: 15px;

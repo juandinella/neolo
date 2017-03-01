@@ -1,4 +1,4 @@
-section.pricing#pricingTable
+section.pricing#pricing
   .container
     .row
       .col-md-10.col-md-offset-1
@@ -8,28 +8,25 @@ section.pricing#pricingTable
         .row
           .col-xs-12
             .pricing-table
-              .pricing-item.plan-0
+              .pricing-item.table-1
                 header
-                  h4 Plan 0
+                  h4 Plan ilimitado
                 section
                   ul
                     li #[span 1] dominio
-                      a(href="#", title="", data-tooltip="Agrega todos los dominios que desees a tu cuenta de web hosting.")
-                        svg(class="icon info")
-                          use(xlink:href="#info")
+                      svg(class="icon info")
+                        use(xlink:href="#info")
                     li #[span 15gb] espacio
-                      a(href="#", title="", data-tooltip="No limitamos el espacio siempre y cuando sean contenidos para tu sitio web.")
-                        svg(class="icon info")
-                          use(xlink:href="#info")
+                      svg(class="icon info")
+                        use(xlink:href="#info")
                     li #[span 30gb] de transferencia
-                      a(href="#", title="", data-tooltip="Crea todas las cuentas de email que quieras, sin costo adicional.")
-                        svg(class="icon info")
-                          use(xlink:href="#info")
+                      svg(class="icon info")
+                        use(xlink:href="#info")
                 footer
-                  p Desde #[span $31]
+                  p Desde #[span $57]
                   a.btn(href="", title="") Comprar
 
-              .pricing-item.pricing-item_featured.plan-1
+              .pricing-item.pricing-item_featured.table-6
                 header
                   h4 Plan 1
                 section
@@ -46,22 +43,26 @@ section.pricing#pricingTable
                 footer
                   p Desde #[span $39]
                   a.btn(href="", title="") Comprar
-              .pricing-item.plan-ilimitado
+
+              .pricing-item.table-12
                 header
-                  h4 Plan ilimitado
+                  h4 Plan 0
                 section
                   ul
                     li #[span 1] dominio
-                      svg(class="icon info")
-                        use(xlink:href="#info")
+                      a(href="#0", title="", data-tooltip="Agrega todos los dominios que desees a tu cuenta de web hosting.")
+                        svg(class="icon info")
+                          use(xlink:href="#info")
                     li #[span 15gb] espacio
-                      svg(class="icon info")
-                        use(xlink:href="#info")
+                      a(href="#0", title="", data-tooltip="No limitamos el espacio siempre y cuando sean contenidos para tu sitio web.")
+                        svg(class="icon info")
+                          use(xlink:href="#info")
                     li #[span 30gb] de transferencia
-                      svg(class="icon info")
-                        use(xlink:href="#info")
+                      a(href="#0", title="", data-tooltip="Crea todas las cuentas de email que quieras, sin costo adicional.")
+                        svg(class="icon info")
+                          use(xlink:href="#info")
                 footer
-                  p Desde #[span $57]
+                  p Desde #[span $31]
                   a.btn(href="", title="") Comprar
 
         .row
