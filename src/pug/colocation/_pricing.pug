@@ -3,11 +3,23 @@ section.pricing
     .row
       .col-md-12
         header
-          h2 Tu plan, a medida
-          p p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          h2 Tu plan, a medida, tan a medida que tenes que escribirnos, bla bla bla
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         .row
-          .col-xs-12
-            a.btn.btn_orange(href="/", title="")
-              span Consultar
-              svg(class="icon chevron-right")
-                use(xlink:href="#chevron-right")
+          .col-sm-10.col-sm-offset-1
+            form.row(method="", action="")
+              .col-sm-6
+                .input-group
+                  label(form='name') Nombre y apellido
+                  input(type="text", placeholder='' id='name' required)
+                .input-group
+                  label(form='email') Email
+                  input(type="email", placeholder='' id='email' required)
+                .input-group
+                  label(form='phone') Teléfono de contacto
+                  input(type="text", placeholder='' id='phone' required)
+              .col-sm-6
+                .input-group
+                  label(form='textarea') ¿En qué te podemos ayudar?
+                  textarea(id='textarea' required)
+              button.btn.btn_orange.submit(type='submit') Enviar consulta

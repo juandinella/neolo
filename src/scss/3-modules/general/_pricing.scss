@@ -92,6 +92,12 @@
     border-top: 0 none;
     padding: 20px 0 25px;
     background-color: white;
+
+    .pricingSmall{
+      @include font-size(1.2,1.2);
+      margin-bottom: 15px;
+      display: block;
+    }
   }
 
   p{
@@ -107,7 +113,6 @@
     min-width: 50%;
   }
 }
-
 
 
 .pricing-table_four{
@@ -143,7 +148,11 @@
   }
 }
 
-
+.pricing-table-full{
+  .pricing-item{
+    flex: 0 100%;
+  }
+}
 
 .allPlans{
   @include font-size(1.4,2);

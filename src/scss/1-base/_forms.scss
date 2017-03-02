@@ -1,0 +1,50 @@
+.input-group{
+  width: 100%;
+  margin-bottom: 16px;
+
+  label{
+    display: block;
+    text-align: left;
+    @include font-size(1.1,1.4);
+    font-family: $fontMedium;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    padding-left: 2px;
+  }
+
+  input{
+    height: 38px;
+    padding-left: 6px;
+  }
+
+  textarea{
+    height: 38px;
+    padding-left: 6px;
+    @include font-size(1.6,1.6);
+    resize: none;
+    height: 178px;
+  }
+
+  input,
+  textarea{
+    font-family: $font;
+    width: 100%;
+    @include font-size(1.6,1.6);
+    border: 1px solid #d8d5d5;
+    transition: all 0.225s ease;
+    outline: none;
+
+    &:focus{
+      box-shadow: 0 0 3px $main-color;
+    }
+  }
+}
+
+button.submit{
+  border: 0 none;
+  font-family: $font;
+  @include font-size(1.6,1.6);
+  min-width: 200px;
+  max-width: 200px;
+  cursor: pointer;
+}
