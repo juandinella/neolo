@@ -81,14 +81,25 @@
 * Dropdown
 */
 +(function ($) {
+
+  $(window).click(function() {
+    $('.dropdown').removeClass('is-active');
+  });
+
+  $('.dropdown').click(function(event){
+    event.stopPropagation();
+  });
+
   $('.hasMenu').click(function() {
     var dropdown = '#dropdown-' + $(this).attr('id');
+    $('.hasMenu').removeClass('menuSelected');
+    $('.dropdown').not($(dropdown)).removeClass('is-active');
     $(dropdown).toggleClass('is-active');
-    $(this).removeClass('menuSelected');
     if ($(dropdown).hasClass('is-active')) {
       $(this).addClass('menuSelected');
     }
   });
+
 })(jQuery);
 
 
