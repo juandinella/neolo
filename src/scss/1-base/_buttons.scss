@@ -9,7 +9,6 @@
   text-align: center;
 }
 
-
 .btn_orange{
   background-color: $orange;
   color: white;
@@ -20,6 +19,14 @@
     .chevron-right{
       left: 10px;
     }
+  }
+}
+
+.btn_google-blue{
+  background-color: $google-blue;
+
+  &:hover{
+    background-color: darken($google-blue, 5%);
   }
 }
 
