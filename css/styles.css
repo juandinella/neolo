@@ -891,6 +891,7 @@ p
     padding: 12px 30px;
 
     transition: background-color .3s ease;
+    text-align: center;
 
     color: white;
     border-radius: 50px;
@@ -910,6 +911,16 @@ p
 .btn_orange:hover .chevron-right
 {
     left: 10px;
+}
+
+.btn_google-blue
+{
+    background-color: #039be5;
+}
+
+.btn_google-blue:hover
+{
+    background-color: #038acc;
 }
 
 .btn-border
@@ -953,6 +964,7 @@ p
     padding-left: 2px;
 
     text-align: left;
+    letter-spacing: .025em;
     text-transform: uppercase;
 }
 
@@ -971,6 +983,7 @@ p
 
     height: 38px;
     height: 178px;
+    padding-top: 5px;
     padding-left: 6px;
 
     resize: none;
@@ -1013,6 +1026,16 @@ button.submit
     cursor: pointer;
 
     border: 0 none;
+}
+
+.gray-bg
+{
+    background-color: #eaedf0;
+}
+
+.white-bg
+{
+    background-color: white;
 }
 
 .container
@@ -1792,6 +1815,11 @@ button.submit
     text-align: center;
 }
 
+.hero .btn
+{
+    margin-left: 0;
+}
+
 .hero h1,
 .hero h2,
 .hero p
@@ -2497,6 +2525,11 @@ button.submit
     width: 38px;
 }
 
+.plus-icon .multimedia
+{
+    width: 38px;
+}
+
 .plus-content
 {
     margin-left: 50px;
@@ -2609,7 +2642,7 @@ button.submit
 
     width: 260px;
     margin-bottom: 5px;
-    margin-left: -80px;
+    margin-left: -200px;
     padding: 7px;
 
     content: attr(data-tooltip);
@@ -2632,7 +2665,7 @@ button.submit
     left: 50%;
 
     width: 0;
-    margin-left: -5px;
+    margin-left: -2px;
 
     content: ' ';
 
@@ -2764,7 +2797,7 @@ button.submit
     background-color: white;
 }
 
-.faq-border
+.skew-border
 {
     padding: 50px 0;
 }
@@ -2793,7 +2826,7 @@ button.submit
 
 .faqBlock-question:hover
 {
-    background-color: #77c55c;
+    background-color: #6ec151;
 }
 
 .faqBlock-question h4
@@ -2811,6 +2844,11 @@ button.submit
     text-transform: uppercase;
 
     color: white;
+}
+
+.question-active
+{
+    background-color: #6ec151;
 }
 
 .faqBlock-question_toggle
@@ -3379,6 +3417,125 @@ button.submit
     background-color: white;
 }
 
+.designs
+{
+    padding: 75px 0;
+}
+
+.designs header
+{
+    margin-bottom: 70px;
+
+    text-align: center;
+}
+
+.designs header h2
+{
+    margin-bottom: 20px;
+}
+
+.designs .btn
+{
+    min-width: 200px;
+
+    text-align: center;
+}
+
+.design-block
+{
+    position: relative;
+
+    display: block;
+
+    margin-bottom: 20px;
+}
+
+.design-block img
+{
+    display: block;
+}
+
+.design-block:hover .design-block_overlay
+{
+    opacity: 1;
+}
+
+.design-block_overlay
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: -ms-flexbox;
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+
+    transition: all .225s ease;
+
+    opacity: 0;
+    background-color: rgba(228, 116, 78, .85);
+
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.design-block_overlay p
+{
+    padding: 10px 25px;
+
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+.smartphone
+{
+    background-color: white;
+}
+
+.smartphone h3
+{
+    font-weight: 700;
+    line-height: 1;
+
+    margin-bottom: 20px;
+}
+
+.smartphone-text
+{
+    margin-top: 0;
+}
+
+.smartphone-text p
+{
+    margin-bottom: 10px;
+}
+
+.smartphone-text .btn
+{
+    margin-left: auto;
+}
+
+.smartphone-img
+{
+    margin-top: 0;
+}
+
+.smartphone-img img
+{
+    display: block;
+
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
 .heroDesktop
 {
     display: none;
@@ -3644,7 +3801,7 @@ button.submit
 
     text-align: center;
 
-    background: white;
+    background-color: white;
 }
 
 .home-blockCenter h2
@@ -3657,6 +3814,11 @@ button.submit
     width: 230px;
 
     text-align: center;
+}
+
+.home-blockCenter.gray-bg
+{
+    background-color: #eaedf0;
 }
 
 @media (min-width: 30em)
@@ -3847,7 +4009,7 @@ button.submit
         padding: 75px 0;
     }
 
-    .faq-border
+    .skew-border
     {
         padding: 75px 0;
     }
@@ -4158,12 +4320,17 @@ button.submit
         text-align: center;
     }
 
+    [data-tooltip]:before
+    {
+        margin-left: -80px;
+    }
+
     .faq
     {
         padding: 75px 0 50px 0;
     }
 
-    .faq-border
+    .skew-border
     {
         padding: 150px 0 50px 0;
     }
@@ -4245,6 +4412,11 @@ button.submit
     .client-slide_content h4
     {
         max-width: 62%;
+    }
+
+    .smartphone-text .btn
+    {
+        margin-left: 0;
     }
 
     .heroDesktop
@@ -4594,6 +4766,16 @@ button.submit
         line-height: 4.4rem;
 
         max-width: 62%;
+    }
+
+    .smartphone-text
+    {
+        margin-top: 60px;
+    }
+
+    .smartphone-img
+    {
+        margin-top: 10px;
     }
 
     .home-block_content
