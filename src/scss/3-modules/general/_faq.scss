@@ -11,7 +11,7 @@
   }
 }
 
-.faq-border{
+.skew-border{
   padding: 50px 0;
 
   @include breakpoint(xs) {
@@ -40,7 +40,7 @@
   margin-bottom: 20px;
 
   &:hover{
-    background-color: darken($green-secondary, 5%);
+    background-color: darken($green-secondary, 8%);
   }
 
   h4{
@@ -60,7 +60,9 @@
   }
 }
 
-
+.question-active{
+  background-color: darken($green-secondary, 8%);
+}
 
 .faqBlock-question_toggle{
   position: absolute;

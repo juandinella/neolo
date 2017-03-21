@@ -10,6 +10,7 @@
     text-transform: uppercase;
     margin-bottom: 2px;
     padding-left: 2px;
+    letter-spacing: 0.025em;
   }
 
   input{
@@ -23,6 +24,7 @@
     @include font-size(1.6,1.6);
     resize: none;
     height: 178px;
+    padding-top: 5px;
   }
 
   input,
