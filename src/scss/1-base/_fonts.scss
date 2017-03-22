@@ -55,6 +55,10 @@ h3{
   @include font-size(3.2,4.6);
 }
 
+h4{
+  @include font-size(2.8,4.2);
+}
+
 a{
   text-decoration: none;
 }
