@@ -3336,7 +3336,7 @@ button.submit
 .clients .angle-right
 {
     position: relative;
-    left: 2px;
+    left: 1px;
 
     width: 7px;
     height: 30px;
@@ -4292,6 +4292,14 @@ button.submit
 
         -ms-flex: 0 32%;
             flex: 0 32%;
+    }
+
+    .pricing-table_two .pricing-item
+    {
+        margin-bottom: 25px;
+
+        -ms-flex: 0 49%;
+            flex: 0 49%;
     }
 
     .pricing-table_four .pricing-item
