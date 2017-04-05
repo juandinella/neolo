@@ -916,9 +916,28 @@ p
     background-color: #e16338;
 }
 
-.btn_orange:hover .chevron-right
+.btn_orange:hover .angle-right
 {
     left: 10px;
+}
+
+.btn_orange:hover .angle-down
+{
+    top: 5px;
+}
+
+.angle-down
+{
+    position: relative;
+    top: 0;
+    left: 10px;
+
+    display: inline-block;
+
+    width: 10px;
+    height: 10px;
+
+    transition: top .3s ease;
 }
 
 .btn_google-blue
@@ -3405,7 +3424,7 @@ button.submit
     text-transform: uppercase;
 }
 
-.chevron-right
+.angle-right
 {
     position: relative;
     left: 5px;
