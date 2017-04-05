@@ -16,10 +16,25 @@
   &:hover{
     background-color: darken($orange, 5%);
 
-    .chevron-right{
+    .angle-right{
       left: 10px;
     }
+
+    .angle-down{
+      top: 5px;
+    }
   }
+}
+
+
+.angle-down{
+  position: relative;
+  left: 10px;
+  top: 0;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  transition: top .3s ease;
 }
 
 .btn_google-blue{
