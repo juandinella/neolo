@@ -124,30 +124,32 @@
   });
 })(jQuery);
 
+
 /**
 * HIDE FAQ
 */
-
 +(function($) {
   $ShowHideMore = $('.topFaqs');
   $ShowHideMore.each(function() {
     var $times = $(this).children('.faqBlock');
     if ($times.length > 5) {
       $ShowHideMore.children(':nth-of-type(n+5)').addClass('moreShown').hide();
-      $(this).find('.btn-more-less').addClass('more-times');
+      $('.btn-more-less').addClass('more-times');
     }
   });
 
 
   $('.btn-more-less').click(function(){
     var that = $(this);
-    var thisParent = that.closest('.faqBlock');
+    var thisParent = that.closest('.faqContainer');
+
     if (that.hasClass('more-times')) {
-      thisParent.find('.moreShown').show();
-      that.toggleClass('more-times', 'less-times');
+      thisParent.find('.moreShown').fadeIn();
+      that.toggleClass('more-times', 'less-times').find('.btn-text').html(' Ver menos preguntas');
+
     } else {
-      thisParent.find('.moreShown').hide();
-      that.toggleClass('more-times', 'less-times');
+      thisParent.find('.moreShown').fadeOut();
+      that.toggleClass('more-times', 'less-times').find('.btn-text').html('Ver todas las preguntas');
     }
   });
 
