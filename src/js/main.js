@@ -125,9 +125,38 @@
 })(jQuery);
 
 /**
-* Clients slider
+* HIDE FAQ
 */
 
++(function($) {
+  $ShowHideMore = $('.topFaqs');
+  $ShowHideMore.each(function() {
+    var $times = $(this).children('.faqBlock');
+    if ($times.length > 5) {
+      $ShowHideMore.children(':nth-of-type(n+5)').addClass('moreShown').hide();
+      $(this).find('.btn-more-less').addClass('more-times');
+    }
+  });
+
+
+  $('.btn-more-less').click(function(){
+    var that = $(this);
+    var thisParent = that.closest('.faqBlock');
+    if (that.hasClass('more-times')) {
+      thisParent.find('.moreShown').show();
+      that.toggleClass('more-times', 'less-times');
+    } else {
+      thisParent.find('.moreShown').hide();
+      that.toggleClass('more-times', 'less-times');
+    }
+  });
+
+})(jQuery);
+
+
+/**
+* Clients slider
+*/
 +(function($) {
   $(document).ready(function() {
     var slider = $('.clients-slider')
