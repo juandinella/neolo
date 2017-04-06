@@ -34,7 +34,7 @@
 .faqBlock-question{
   background-color: $green-secondary;
   position: relative;
-  padding: 20px 0;
+  padding: 20px 5px;
   cursor: pointer;
   margin-bottom: 20px;
 
@@ -88,5 +88,10 @@
     &:last-of-type{
       margin-bottom: 0;
     }
+  }
+
+  a{
+    color: $green-secondary;
+    text-decoration: underline;
   }
 }

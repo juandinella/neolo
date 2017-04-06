@@ -133,11 +133,10 @@
   $ShowHideMore.each(function() {
     var $times = $(this).children('.faqBlock');
     if ($times.length > 5) {
-      $ShowHideMore.children(':nth-of-type(n+5)').addClass('moreShown').hide();
-      $('.btn-more-less').addClass('more-times');
+      $ShowHideMore.children(':nth-of-type(n+6)').addClass('moreShown').hide();
+      $('.btn-more-less').show().addClass('more-times');
     }
   });
-
 
   $('.btn-more-less').click(function(){
     var that = $(this);

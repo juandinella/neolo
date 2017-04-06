@@ -1,11 +1,11 @@
 section.faq.skew-border
-  .container
+  .container.faqContainer
     .row
       .col-xs-12
         h2 Preguntas Frecuentes
     .faqBlocks
       .row
-        .col-md-8.col-md-offset-2
+        .col-md-8.col-md-offset-2.topFaqs
           .faqBlock
             .faqBlock-question
               h4 ¿Por qué me conviene Neolo?
@@ -84,12 +84,9 @@ section.faq.skew-border
 
             .faqBlock-answer
               p Los técnicos de Neolo escanearán cada línea de código de tu WordPress y eliminarán todo el MalWare (virus, troyanos, códigos maliciosos).
-       
-
-
-
+  
     .row
-      a.btn.btn_orange(href="", title="Ver todas las preguntas", role="button")
-        span Ver todas las preguntas
+      a.btn.btn_orange.btn-more-less(title="Ver todas las preguntas", role="button")
+        span.btn-text Ver todas las preguntas
         svg(class="icon angle-right")
           use(xlink:href="#angle-right")
