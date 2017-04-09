@@ -953,6 +953,11 @@ p
     background-color: white;
 }
 
+.btn-more-less
+{
+    display: none;
+}
+
 .input-group
 {
     width: 100%;
@@ -2826,7 +2831,7 @@ button.submit
     position: relative;
 
     margin-bottom: 20px;
-    padding: 20px 0;
+    padding: 20px 5px;
 
     cursor: pointer;
 
@@ -2899,6 +2904,13 @@ button.submit
 .faqBlock-answer p:last-of-type
 {
     margin-bottom: 0;
+}
+
+.faqBlock-answer a
+{
+    text-decoration: underline;
+
+    color: #87cc6f;
 }
 
 .help
