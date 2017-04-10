@@ -9,3 +9,51 @@
 .hero-slide{
   height: 500px;
 }
+
+
+.heroDomian{
+  .hero-whiteBox{
+    width: auto;
+    margin-left: 0;
+
+    header{
+      width: 80%;
+    }
+
+    section{
+      margin-top: 25px;
+    }
+
+    ul{
+      text-align: left;
+
+      li{
+        display: inline-block;
+        margin-right: 10px;
+
+        &:last-of-type{
+          margin-right: 0;
+        }
+
+        span{
+          font-family: $fontBold;
+          color: $orange;
+        }
+      }
+    }
+
+    .input-group{
+      position: relative;
+
+      button{
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-radius: 0;
+        margin: 0;
+        min-width: auto;
+        height: 38px;
+      }
+    }
+  }
+}

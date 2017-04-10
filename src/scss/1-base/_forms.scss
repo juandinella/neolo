@@ -42,11 +42,15 @@
   }
 }
 
-button.submit{
+button{
   border: 0 none;
   font-family: $font;
   @include font-size(1.6,1.6);
+  cursor: pointer;
+}
+
+button.submit{
   min-width: 200px;
   max-width: 200px;
-  cursor: pointer;
+
 }
