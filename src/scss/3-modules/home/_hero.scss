@@ -12,6 +12,15 @@
 
 
 .heroDomian{
+
+  h1{
+    @include font-size(3,3.2);
+
+    @include breakpoint(medium) {
+      @include font-size(4,4.6);
+    }
+  }
+
   .hero-whiteBox{
     width: auto;
     margin-left: 0;
