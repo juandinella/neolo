@@ -1026,7 +1026,7 @@ p
     box-shadow: 0 0 3px #a3c220;
 }
 
-button.submit
+button
 {
     font-family: 'dinregular', Helvetica, Arial, sans-serif;
     font-size: 16px;
@@ -1034,12 +1034,15 @@ button.submit
     line-height: 16px;
     line-height: 1.6rem;
 
-    min-width: 200px;
-    max-width: 200px;
-
     cursor: pointer;
 
     border: 0 none;
+}
+
+button.submit
+{
+    min-width: 200px;
+    max-width: 200px;
 }
 
 .gray-bg
@@ -3627,6 +3630,64 @@ button.submit
 .hero-slide
 {
     height: 500px;
+}
+
+.heroDomian .hero-whiteBox
+{
+    width: auto;
+    margin-left: 0;
+}
+
+.heroDomian .hero-whiteBox header
+{
+    width: 80%;
+}
+
+.heroDomian .hero-whiteBox section
+{
+    margin-top: 25px;
+}
+
+.heroDomian .hero-whiteBox ul
+{
+    text-align: left;
+}
+
+.heroDomian .hero-whiteBox ul li
+{
+    display: inline-block;
+
+    margin-right: 10px;
+}
+
+.heroDomian .hero-whiteBox ul li:last-of-type
+{
+    margin-right: 0;
+}
+
+.heroDomian .hero-whiteBox ul li span
+{
+    font-family: 'dinbold', Helvetica, Arial, sans-serif;
+
+    color: #e4744e;
+}
+
+.heroDomian .hero-whiteBox .input-group
+{
+    position: relative;
+}
+
+.heroDomian .hero-whiteBox .input-group button
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    min-width: auto;
+    height: 38px;
+    margin: 0;
+
+    border-radius: 0;
 }
 
 .heroMobile
