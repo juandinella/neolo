@@ -1,3 +1,25 @@
 .whois-result{
-  padding: 50px 0;
+  padding-bottom: 50px;
+  background-color: $white;
+}
+
+.whois-result_list{
+  background-color: $gray;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 5px;
+  width: 90%;
+
+  @include breakpoint(md) {
+    padding: 25px;
+  }
+
+  li{
+    @include font-size(1.4,2.2);
+    word-break: break-all;
+
+    @include breakpoint(md) {
+      @include font-size(1.6,2.4);
+    }
+  }
 }
