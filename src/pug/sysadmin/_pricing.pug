@@ -1,84 +1,25 @@
-section.pricing#pricing
+section.pricing
   .container
     .row
-      .col-md-10.col-md-offset-1
+      .col-md-12
         header
-          h2 Tu hosting, a medida
-          p Dentro de estos planes de hosting está el tuyo, con el servicio que deseás y al precio que buscás
+          h2 Cada empresa es diferente, conversemos
+          p Cada organización tiene objetivos distintos. Por eso es importante que te comuniques con nosotros. Charlá e intercambiá ideas con un experto en IT sobre cuales son las necesidades de tu negocio. Te prepararemos un presupuesto en menos de 24 horas para que podamos trabajar juntos.
         .row
-          .col-xs-12
-            .pricing-table
-              .pricing-item.table-1
-                header
-                  h4 Plan ilimitado
-                section
-                  ul
-                    li #[span ilimitados] dominios
-                      svg(class="icon info")
-                        use(xlink:href="#info")
-                    li #[span ilimitado] espacio
-                      svg(class="icon info")
-                        use(xlink:href="#info")
-                    li #[span ilimitadas] bases MySQL
-                      svg(class="icon info")
-                        use(xlink:href="#info")
-                footer
-                  p Desde #[span $57]
-                  a.btn(href="", title="") Comprar
-
-              .pricing-item.pricing-item_featured.table-6
-                header
-                  h4 Plan 1
-                section
-                  ul
-                    li #[span 1] dominio
-                      svg(class="icon info")
-                        use(xlink:href="#info")
-                    li #[span ilimitado] espacio
-                      svg(class="icon info")
-                        use(xlink:href="#info")
-                    li #[span ilimitadas] bases MySQL
-                      svg(class="icon info")
-                        use(xlink:href="#info")
-                footer
-                  p Desde #[span $39]
-                  a.btn(href="", title="") Comprar
-
-              .pricing-item.table-12
-                header
-                  h4 Plan 0
-                section
-                  ul
-                    li #[span 1] dominio
-                      a(href="#0", title="", data-tooltip="Agrega todos los dominios que desees a tu cuenta de web hosting.")
-                        svg(class="icon info")
-                          use(xlink:href="#info")
-                    li #[span ilimitado] espacio
-                      a(href="#0", title="", data-tooltip="No limitamos el espacio siempre y cuando sean contenidos para tu sitio web.")
-                        svg(class="icon info")
-                          use(xlink:href="#info")
-                    li #[span sin] bases MysQL
-                      a(href="#0", title="", data-tooltip="Crea todas las cuentas de email que quieras, sin costo adicional.")
-                        svg(class="icon info")
-                          use(xlink:href="#info")
-                footer
-                  p Desde #[span $31]
-                  a.btn(href="", title="") Comprar
-
-        .row
-          .col-xs-12
-            p.iva *Al precio hay que incluirle el IVA 21%
-        .row
-          .col-xs-12
-            p.allPlans Todos los planes de hosting incluyen cPanel, espacio web ilimitado, transferencia ilimitada, cuentas de correo ilimitadas, subdominios ilimitados, migraciones gratis, compatibilidad con Google Apps, Office 365 y soporte técnico ilimitado.
-        .row
-          .col-xs-12
-            a.btn.btn_orange(href="", title="")
-              span Ver tabla comparativa de hosting
-              svg(class="icon angle-right")
-                use(xlink:href="#angle-right")
-        .row
-          .col-xs-12
-            a.off(href="", title="")
-              img(src='img/icon-save.png', srcset='img/icon-save.png 1x, img/icon-save@2x.png 2x', alt='')
-              h3 50% OFF el primer año con el código #[span "NUEVACUENTA"]
+          .col-sm-10.col-sm-offset-1
+            form.row(method="", action="")
+              .col-sm-6
+                .input-group
+                  label(form='name') Nombre y apellido
+                  input(type="text", placeholder='' id='name' required)
+                .input-group
+                  label(form='email') Email
+                  input(type="email", placeholder='' id='email' required)
+                .input-group
+                  label(form='phone') Teléfono de contacto
+                  input(type="text", placeholder='' id='phone' required)
+              .col-sm-6
+                .input-group
+                  label(form='textarea') ¿En qué te podemos ayudar?
+                  textarea(id='textarea' required)
+              button.btn.btn_orange.submit(type='submit') Enviar consulta
