@@ -1578,7 +1578,7 @@ button.submit
 
 .topNav .container
 {
-    padding: 10px 10px;
+    padding: 9px 10px;
 }
 
 .topNav .container .col-xs-12
@@ -1673,7 +1673,7 @@ button.submit
 {
     position: relative;
 
-    padding: 15px 0;
+    padding: 18px 0;
 
     background-color: white;
 }
@@ -1706,6 +1706,7 @@ button.submit
     max-width: 180px;
 
     transition: all .3s ease;
+    vertical-align: middle;
 }
 
 /**
@@ -1776,7 +1777,7 @@ button.submit
 
 .sticky .mainNav-logo img
 {
-    max-width: 160px;
+    max-width: 130px;
 }
 
 .header-placeholder.block
@@ -5247,11 +5248,6 @@ button.submit
     .mainNav-menuMobile
     {
         display: none;
-    }
-
-    .sticky .mainNav-logo img
-    {
-        max-width: 160px;
     }
 
     .hero-whiteBox
