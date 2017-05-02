@@ -27,15 +27,21 @@
     max-width: 50%;
     text-align: center;
     margin: 10px 0;
+    padding: 15px;
 
     @include breakpoint(sm) {
       flex-basis: 50%;
       max-width: 50%;
+      padding: 0 10px;
     }
 
     @include breakpoint(md) {
-      flex-basis: 25%;
-      max-width: 25%;
+      flex-basis: 16.6666666667%;
+      max-width: 16.6666666667%;
+    }
+
+    img{
+      max-width: 155px;
     }
   }
 }
