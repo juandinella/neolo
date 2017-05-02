@@ -3291,11 +3291,17 @@ button.submit
 {
     max-width: 50%;
     margin: 10px 0;
+    padding: 15px;
 
     text-align: center;
 
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
+}
+
+.partners-list div img
+{
+    max-width: 155px;
 }
 
 .clients
@@ -4979,6 +4985,7 @@ button.submit
     .partners-list div
     {
         max-width: 50%;
+        padding: 0 10px;
 
         -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
@@ -5362,10 +5369,10 @@ button.submit
 
     .partners-list div
     {
-        max-width: 25%;
+        max-width: 16.6666666667%;
 
-        -ms-flex-preferred-size: 25%;
-        flex-basis: 25%;
+        -ms-flex-preferred-size: 16.6666666667%;
+        flex-basis: 16.6666666667%;
     }
 
     .client-slide_content h4
