@@ -23,8 +23,8 @@
   flex-wrap: wrap;
 
   div{
-    flex-basis: 100%;
-    max-width: 100%;
+    flex-basis: 50%;
+    max-width: 50%;
     text-align: center;
     margin: 10px 0;
 
@@ -34,8 +34,8 @@
     }
 
     @include breakpoint(md) {
-      flex-basis: auto;
-      max-width: auto;
+      flex-basis: 25%;
+      max-width: 25%;
     }
   }
 }

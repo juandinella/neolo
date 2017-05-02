@@ -104,10 +104,10 @@
   .mainNav-logo{
 
     img{
-      max-width: 180px;
+      max-width: 160px;
 
       @include breakpoint(md) {
-        max-width: 200px;
+        max-width: 160px;
       }
     }
   }
