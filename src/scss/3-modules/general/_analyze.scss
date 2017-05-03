@@ -1,0 +1,77 @@
+.analyze{
+  padding: 50px 0;
+
+  header{
+    margin: 0 auto;
+
+    h2{
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.table-analyze{
+  background-color: $white;
+
+  header{
+    background-color: $green;
+    font-family: $fontMedium;
+    display: none;
+
+    @include breakpoint(xs) {
+      display: flex;
+    }
+
+    div{
+      border: 0 none;
+      @include font-size(1.6,1.6);
+      color: $white;
+    }
+  }
+}
+
+.table-row {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 0;
+  flex-wrap: wrap;
+  width: 100%;
+  border-collapse: collapse;
+
+
+  div{
+    flex-grow: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+    width: 100%;
+    @include font-size(1.4,1.4);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid $border-gray;
+
+    @include breakpoint(xs) {
+      width: 180px;
+    }
+
+    span{
+      margin-left: 10px;
+    }
+  }
+}
+
+.tick{
+  width: 15px;
+  height: 12px;
+  color: $green-secondary;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.empty{
+  display: none;
+  @include breakpoint(xs) {
+    display: block;
+  }
+}
