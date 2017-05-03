@@ -4105,6 +4105,108 @@ button.submit
     background-position: -183px -55px;
 }
 
+.analyze
+{
+    padding: 50px 0;
+}
+
+.analyze header
+{
+    margin: 0 auto;
+}
+
+.analyze header h2
+{
+    margin-bottom: 40px;
+}
+
+.table-analyze
+{
+    background-color: white;
+}
+
+.table-analyze header
+{
+    font-family: 'dinmedium', Helvetica, Arial, sans-serif;
+
+    display: none;
+
+    background-color: #a3c220;
+}
+
+.table-analyze header div
+{
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 16px;
+    line-height: 1.6rem;
+
+    color: white;
+    border: 0 none;
+}
+
+.table-row
+{
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: row;
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    -ms-flex-direction: row;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.table-row div
+{
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 14px;
+    line-height: 1.4rem;
+
+    overflow: hidden;
+
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    border: 1px solid #e4e4e4;
+
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+.table-row div span
+{
+    margin-left: 10px;
+}
+
+.tick
+{
+    display: inline-block;
+
+    width: 15px;
+    height: 12px;
+
+    vertical-align: middle;
+
+    color: #87cc6f;
+}
+
+.empty
+{
+    display: none;
+}
+
 .heroDesktop
 {
     display: none;
@@ -4601,6 +4703,22 @@ button.submit
     .skew-border
     {
         padding: 75px 0;
+    }
+
+    .table-analyze header
+    {
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .table-row div
+    {
+        width: 180px;
+    }
+
+    .empty
+    {
+        display: block;
     }
 
     .heroMobile-slide_img
