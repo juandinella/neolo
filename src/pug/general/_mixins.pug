@@ -8,3 +8,8 @@ mixin dropdown(id,title,description)
         .col-xs-5.dropdown-description
           p=description
         block
+
+mixin flags(options)
+  li: a(href="", title=`${options.title}`)
+    i(class=`sprite sprite-${options.id}`) 
+    p=options.title
