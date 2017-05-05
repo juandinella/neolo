@@ -2157,9 +2157,10 @@ button.submit
 
 .pricing-item .btn
 {
+    width: 90%;
     min-width: 50%;
     margin: 0 auto;
-    padding: 10px 80px;
+    padding: 10px;
 }
 
 .pricing-table_five .pricing-item .btn
@@ -5396,6 +5397,12 @@ button.submit
     .pricing
     {
         margin-top: 50px;
+    }
+
+    .pricing-item .btn
+    {
+        width: auto;
+        padding: 10px 80px;
     }
 
     .pricing-table_four .pricing-item
