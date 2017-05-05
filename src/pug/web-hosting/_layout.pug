@@ -1,0 +1,28 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0")
+    title Neolo
+    link(rel='icon', href='img/favicon.ico')
+    link(rel='icon', type='image/png', href='img/favicon.png')
+    meta(name='theme-color', content='#9DBC19')
+    meta(name='robotos', content='noindex, nofollow')  
+    link(rel='stylesheet', href='css/styles.css')
+    block head
+
+  body
+    div.is-hidden
+      include ../layouts/includes/svg.svg
+
+    block content
+      include ../general/_mixins
+      include ../general/_topNav
+      include ../general/_header
+      include ../general/_footer
+    
+
+    script(src="js/vendor.js")
+    script(src='js/app.js')
+
+    block scripts
