@@ -1,11 +1,4 @@
-
-/**
-* Tooltip
-*/
-
-
 /* Add this attribute to the element that needs a tooltip */
-
 [data-tooltip] {
   position: relative;
   z-index: 2;
@@ -31,7 +24,7 @@
   width: 260px;
   border-radius: 3px;
   background-color: $black;
-  color: #fff;
+  color: $white;
   content: attr(data-tooltip);
   text-align: center;
   font-size: 14px;
