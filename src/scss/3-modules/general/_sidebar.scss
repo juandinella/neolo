@@ -1,0 +1,141 @@
+.sidebar{
+  background-color: $black;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 367px;
+  z-index: 100;
+  transition: transform 0.3s cubic-bezier(0.0, 0.0, 0.2, 1);
+  display: block;
+  backface-visibility: hidden;
+  height: 100%;
+  transform: translate3d(101%,0,0);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .25);
+}
+
+.sidebar.is-active{
+  transform: translate3d(0,0,0);
+}
+
+
+/**
+* Close
+*/
+.sidebar-close{
+  display: flex;
+  align-items: center;
+  height: 64px;
+  cursor: pointer;
+  padding: 0 17px;
+  background-color: $white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.close{
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 20px;
+  right: 17px;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  z-index: 3;
+
+
+  &:before,
+  &:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: $black;
+    position: absolute;
+    top: 12px;
+  }
+
+  &:before{
+    transform: rotate(45deg);
+  }
+
+  &:after{
+    transform: rotate(-45deg);
+  }
+}
+
+/**
+* Multi level
+*/
+
+a.menu-title,
+a.back-btn{
+  background-color: $green;
+  color: $black;
+}
+
+.rwd-menu{
+  background-color: $black;
+  position: relative;
+  left: 0;
+  top: 64px;
+  z-index: 1;
+  transition: all 1s ease;
+  overflow: hidden;
+  overflow-y: auto;
+  height: 100%;
+
+  li{
+    a{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 20px;
+      border-bottom: 1px solid rgba($white, 0.1);
+      color:$white;
+      cursor: pointer;
+    }
+
+    .angle-right{
+      margin-right: 0;
+    }
+
+    .angle-left{
+      width: 10px;
+      height: 10px;
+    }
+
+    a.back-btn{
+      display: block;
+
+      i{
+        display: inline-block;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+/* hide submenu */
+.rwd-submenu{
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background-color: $black;
+  width: 100%;
+  visibility: hidden;
+  transition:all .2s ease;
+  height: 100%;
+  bottom: 0;
+}
+
+.open-submenu .rwd-submenu{
+  left:0;
+  top:0;
+  z-index:2;
+  visibility:visible;
+  transition:all .2s ease;
+}
