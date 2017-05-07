@@ -1,53 +1,6 @@
 /* global jQuery */
 
 ;(function ($) {
-  var question = $('.faqBlock-question')
-  var answer = $('.faqBlock-answer')
-
-  answer.hide()
-
-  question.click(function () {
-    $(this).next('.faqBlock-answer').slideToggle(250)
-    $(this).toggleClass('question-active')
-
-    if ($(this).hasClass('question-active')) {
-      $(this).find('.faqBlock-question_toggle').text('-')
-    } else {
-      $(this).find('.faqBlock-question_toggle').text('+')
-    }
-  })
-})(jQuery)
-
-/**
-* Hide FAQ
-*/
-;(function ($) {
-  var $ShowHideMore = $('.topFaqs')
-  $ShowHideMore.each(function () {
-    var $times = $(this).children('.faqBlock')
-    if ($times.length > 5) {
-      $ShowHideMore.children(':nth-of-type(n+6)').addClass('moreShown').hide()
-      $('.btn-more-less').show().addClass('more-times')
-    }
-  })
-
-  $('.btn-more-less').click(function () {
-    var that = $(this)
-    var thisParent = that.closest('.faqContainer')
-
-    if (that.hasClass('more-times')) {
-      thisParent.find('.moreShown').fadeIn()
-      that.toggleClass('more-times', 'less-times').find('.btn-text').html(' Ver menos preguntas')
-    } else {
-      thisParent.find('.moreShown').fadeOut()
-      that.toggleClass('more-times', 'less-times').find('.btn-text').html('Ver todas las preguntas')
-    }
-  })
-})(jQuery)
-
-/* global jQuery */
-
-;(function ($) {
   $(document).ready(function () {
     var slider = $('.clients-slider')
 
@@ -118,6 +71,53 @@
 /* global jQuery */
 
 ;(function ($) {
+  var question = $('.faqBlock-question')
+  var answer = $('.faqBlock-answer')
+
+  answer.hide()
+
+  question.click(function () {
+    $(this).next('.faqBlock-answer').slideToggle(250)
+    $(this).toggleClass('question-active')
+
+    if ($(this).hasClass('question-active')) {
+      $(this).find('.faqBlock-question_toggle').text('-')
+    } else {
+      $(this).find('.faqBlock-question_toggle').text('+')
+    }
+  })
+})(jQuery)
+
+/**
+* Hide FAQ
+*/
+;(function ($) {
+  var $ShowHideMore = $('.topFaqs')
+  $ShowHideMore.each(function () {
+    var $times = $(this).children('.faqBlock')
+    if ($times.length > 5) {
+      $ShowHideMore.children(':nth-of-type(n+6)').addClass('moreShown').hide()
+      $('.btn-more-less').show().addClass('more-times')
+    }
+  })
+
+  $('.btn-more-less').click(function () {
+    var that = $(this)
+    var thisParent = that.closest('.faqContainer')
+
+    if (that.hasClass('more-times')) {
+      thisParent.find('.moreShown').fadeIn()
+      that.toggleClass('more-times', 'less-times').find('.btn-text').html(' Ver menos preguntas')
+    } else {
+      thisParent.find('.moreShown').fadeOut()
+      that.toggleClass('more-times', 'less-times').find('.btn-text').html('Ver todas las preguntas')
+    }
+  })
+})(jQuery)
+
+/* global jQuery */
+
+;(function ($) {
   var header = $('.mainHeader')
   var placeholder = $('.header-placeholder')
   var navPos = header.offset().top
@@ -169,6 +169,54 @@
     dots: true,
     swipe: true,
     adaptiveHeight: true
+  })
+})(jQuery)
+
+/* global jQuery */
+
+;(function ($) {
+  var toggle = $('.mainNav-menuMobile')
+  var close = $('.sidebar-close')
+  var overlay = $('.overlay')
+  var sidebar = $('.sidebar')
+  var body = $('body')
+  var removeSidebar = function () {
+    body.css({
+      'overflow': 'inherit',
+      'height': 'inherit'
+    })
+    sidebar.removeClass('is-active')
+    overlay.removeClass('is-active')
+  }
+  toggle.on('click', function () {
+    overlay.addClass('is-active')
+    sidebar.addClass('is-active')
+    return body.css({
+      'overflow': 'hidden',
+      'height': '100%'
+    })
+  })
+  overlay.on('click', removeSidebar)
+  close.on('click', removeSidebar)
+})(jQuery)
+
+;(function ($) {
+  var rwdMenu = $('.rwd-menu')
+  var topMenu = $('.rwd-menu > li > a')
+  var parentLi = $('.rwd-menu > li')
+  var backBtn = $('.back-btn')
+
+  topMenu.on('click', function (e) {
+    var thisTopMenu = $(this).parent()
+    rwdMenu.addClass('rwd-menu-view')
+    parentLi.removeClass('open-submenu')
+    thisTopMenu.addClass('open-submenu')
+  })
+
+  backBtn.click(function () {
+    var thisBackBtn = $(this)
+    parentLi.removeClass()
+    rwdMenu.removeClass('rwd-menu-view')
   })
 })(jQuery)
 

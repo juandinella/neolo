@@ -6,7 +6,7 @@
 
 .slick-loading .slick-list
 {
-    background: #fff url('../assets/ajax-loader.gif') center center no-repeat;
+    background: white url('../assets/ajax-loader.gif') center center no-repeat;
 }
 
 /* Icons */
@@ -1521,14 +1521,6 @@ button.submit
         flex: 0 0 100%;
 }
 
-.row:after
-{
-    display: block;
-    clear: both;
-
-    content: '';
-}
-
 .row
 {
     display: -ms-flexbox;
@@ -1538,37 +1530,12 @@ button.submit
         flex-flow: row wrap;
 }
 
-.row--flex
+.row:after
 {
-    display: -ms-flexbox;
-    display: flex;
-        flex-direction: column;
+    display: block;
+    clear: both;
 
-    max-width: 100%;
-
-    text-align: center;
-
-    -ms-flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-
-.vertical
-{
-        flex-direction: column !important;
-
-    -ms-flex-direction: column !important;
-}
-
-.horizontal
-{
-        flex-direction: row !important;
-
-    -ms-flex-direction: row !important;
+    content: '';
 }
 
 .topNav
@@ -2701,10 +2668,6 @@ button.submit
     text-align: left;
 }
 
-/**
-* Tooltip
-*/
-
 /* Add this attribute to the element that needs a tooltip */
 
 [data-tooltip]
@@ -2746,7 +2709,7 @@ button.submit
     content: attr(data-tooltip);
     text-align: center;
 
-    color: #fff;
+    color: white;
     border-radius: 3px;
     background-color: #4c4c4c;
 }
@@ -2798,7 +2761,7 @@ button.submit
     pointer-events: none;
 
     opacity: 0;
-    background: #fff;
+    background: white;
 }
 
 .dropdown h4
@@ -3183,7 +3146,7 @@ button.submit
 {
     padding: 40px 0;
 
-    background-color: #fff;
+    background-color: white;
 }
 
 .subFooter-wrap
@@ -4215,6 +4178,221 @@ button.submit
     display: none;
 }
 
+.sidebar
+{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    display: block;
+
+    width: 367px;
+    height: 100%;
+
+    transition: transform .3s cubic-bezier(0, 0, .2, 1);
+    transform: translate3d(101%, 0, 0);
+
+    background-color: #4c4c4c;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .25);
+
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+}
+
+.sidebar.is-active
+{
+    transform: translate3d(0, 0, 0);
+}
+
+/**
+* Close
+*/
+
+.sidebar-close
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    display: -ms-flexbox;
+    display: flex;
+
+    width: 100%;
+    height: 64px;
+    padding: 0 17px;
+
+    cursor: pointer;
+
+    background-color: white;
+
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.close
+{
+    position: absolute;
+    z-index: 3;
+    top: 20px;
+    right: 17px;
+
+    width: 25px;
+    height: 25px;
+
+    transform-origin: center;
+}
+
+.close:before,
+.close:after
+{
+    position: absolute;
+    top: 12px;
+
+    display: block;
+
+    width: 100%;
+    height: 2px;
+
+    content: '';
+
+    background: #4c4c4c;
+}
+
+.close:before
+{
+    transform: rotate(45deg);
+}
+
+.close:after
+{
+    transform: rotate(-45deg);
+}
+
+/**
+* Multi level
+*/
+
+a.menu-title,
+a.back-btn
+{
+    color: #4c4c4c;
+    background-color: #a3c220;
+}
+
+.rwd-menu
+{
+    position: relative;
+    z-index: 1;
+    top: 64px;
+    left: 0;
+
+    overflow: hidden;
+    overflow-y: auto;
+
+    height: 100%;
+
+    transition: all 1s ease;
+
+    background-color: #4c4c4c;
+}
+
+.rwd-menu li a
+{
+    display: -ms-flexbox;
+    display: flex;
+
+    padding: 15px 20px;
+
+    cursor: pointer;
+
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.rwd-menu li .angle-right
+{
+    margin-right: 0;
+}
+
+.rwd-menu li .angle-left
+{
+    width: 10px;
+    height: 10px;
+}
+
+.rwd-menu li a.back-btn
+{
+    display: block;
+}
+
+.rwd-menu li a.back-btn i
+{
+    display: inline-block;
+
+    margin-right: 10px;
+}
+
+/* hide submenu */
+
+.rwd-submenu
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+
+    visibility: hidden;
+
+    width: 100%;
+    height: 100%;
+
+    transition: all .2s ease;
+
+    background-color: #4c4c4c;
+}
+
+.open-submenu .rwd-submenu
+{
+    z-index: 2;
+    top: 0;
+    left: 0;
+
+    visibility: visible;
+
+    transition: all .2s ease;
+}
+
+.overlay
+{
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    transition: all .3s ease;
+    pointer-events: none;
+
+    background: transparent;
+}
+
+.overlay.is-active
+{
+    pointer-events: all;
+
+    background: rgba(76, 76, 76, .8);
+}
+
 .heroDesktop
 {
     display: none;
@@ -4333,7 +4511,7 @@ button.submit
     text-align: center;
 
     border: 1px solid #ccc;
-    background-color: #fff;
+    background-color: white;
 }
 
 .heroBlock:hover .heroBlock-disabled
@@ -4397,7 +4575,7 @@ button.submit
     transform: translateX(-50%);
 
     border: inset 14px;
-    border-color: transparent transparent #fff;
+    border-color: transparent transparent white;
     border-top-width: 0;
     border-bottom-style: solid;
 }
