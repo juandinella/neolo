@@ -4188,7 +4188,7 @@ button.submit
 
     display: block;
 
-    width: 367px;
+    width: 280px;
     height: 100%;
 
     transition: transform .3s cubic-bezier(0, 0, .2, 1);
@@ -4282,6 +4282,11 @@ a.back-btn
     background-color: #a3c220;
 }
 
+a.menu-title
+{
+    cursor: auto !important;
+}
+
 .rwd-menu
 {
     position: relative;
@@ -4290,9 +4295,8 @@ a.back-btn
     left: 0;
 
     overflow: hidden;
-    overflow-y: auto;
 
-    height: 100%;
+    height: calc(100% - 64px);
 
     transition: all 1s ease;
 
@@ -4350,6 +4354,7 @@ a.back-btn
     left: 100%;
 
     visibility: hidden;
+    overflow-y: auto;
 
     width: 100%;
     height: 100%;
@@ -5708,6 +5713,11 @@ a.back-btn
     .flags ul
     {
         width: 20%;
+    }
+
+    .sidebar
+    {
+        width: 367px;
     }
 
     .home-block_content
