@@ -4,7 +4,7 @@
   right: 0;
   top: 0;
   bottom: 0;
-  width: 367px;
+  width: 280px;
   z-index: 100;
   transition: transform 0.3s cubic-bezier(0.0, 0.0, 0.2, 1);
   display: block;
@@ -12,6 +12,10 @@
   height: 100%;
   transform: translate3d(101%,0,0);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .25);
+
+  @include breakpoint(md) {
+    width: 367px;
+  }
 }
 
 .sidebar.is-active{
@@ -77,6 +81,10 @@ a.back-btn{
   color: $black;
 }
 
+a.menu-title{
+  cursor: auto !important;
+}
+
 .rwd-menu{
   background-color: $black;
   position: relative;
@@ -85,8 +93,7 @@ a.back-btn{
   z-index: 1;
   transition: all 1s ease;
   overflow: hidden;
-  overflow-y: auto;
-  height: 100%;
+  height: calc(100% - 64px);
 
   li{
     a{
@@ -130,6 +137,7 @@ a.back-btn{
   transition:all .2s ease;
   height: 100%;
   bottom: 0;
+  overflow-y: auto;
 }
 
 .open-submenu .rwd-submenu{
