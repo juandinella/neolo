@@ -894,9 +894,9 @@ p
 {
     display: table;
 
-    min-width: 270px;
+    min-width: 100%;
     margin: 25px auto;
-    padding: 12px 30px;
+    padding: 12px 0;
 
     cursor: pointer;
     transition: background-color .3s ease;
@@ -1962,6 +1962,8 @@ button.submit
     min-width: auto;
     height: 38px;
     margin: 0;
+    padding-right: 25px;
+    padding-left: 25px;
 
     border-radius: 0;
 }
@@ -2900,8 +2902,8 @@ button.submit
     font-family: 'dinmedium', Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-size: 1.6rem;
-    line-height: 16px;
-    line-height: 1.6rem;
+    line-height: 18px;
+    line-height: 1.8rem;
 
     padding-right: 44px;
     padding-left: 10px;
@@ -4931,6 +4933,12 @@ a.menu-title
         font-size: 4rem;
         line-height: 46px;
         line-height: 4.6rem;
+    }
+
+    .btn
+    {
+        min-width: 270px;
+        padding: 12px 30px;
     }
 
     .container
