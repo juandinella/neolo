@@ -1,13 +1,18 @@
 .btn{
   display: table;
   margin: 25px auto;
-  padding: 12px 30px;
+  padding: 12px 0;
   transition: background-color .3s ease;
   color: white;
   border-radius: 50px;
-  min-width: 270px;
+  min-width: 100%;
   text-align: center;
   cursor: pointer;
+
+  @include breakpoint(sm) {
+    min-width: 270px;
+    padding: 12px 30px;
+  }
 }
 
 .btn_orange{
