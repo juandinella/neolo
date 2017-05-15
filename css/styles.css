@@ -1916,7 +1916,7 @@ button.submit
 
 .heroDomian .hero-whiteBox header
 {
-    width: 80%;
+    width: 92%;
 }
 
 .heroDomian .hero-whiteBox section
@@ -3645,7 +3645,7 @@ button.submit
 
 .optimization-form .input-group input
 {
-    width: 500px;
+    max-width: 500px;
     height: 40px;
     padding-left: 15px;
 
@@ -3654,9 +3654,11 @@ button.submit
 
 .optimization-form .input-group button
 {
+    width: 100px;
+    min-width: 100px;
     margin: 0;
 
-    border-radius: 0 40px 40px 0;
+    border-radius: 0 15px 15px 0;
 }
 
 .improve
@@ -5108,6 +5110,11 @@ a.menu-title
         padding-bottom: 0;
     }
 
+    .heroDomian .hero-whiteBox header
+    {
+        width: 80%;
+    }
+
     .mainNav-mobile
     {
         top: 71px;
@@ -5338,6 +5345,14 @@ a.menu-title
     .smartphone-text .btn
     {
         margin-left: 0;
+    }
+
+    .optimization-form .input-group button
+    {
+        width: inherit;
+        min-width: inherit;
+
+        border-radius: 0 40px 40px 0;
     }
 
     .improve .btn
