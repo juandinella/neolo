@@ -3199,7 +3199,8 @@ button.submit
 
     text-align: center;
 
-    background-color: #eaedf0;
+    border-top: 1px solid #dcdddf;
+    background-color: white;
 }
 
 .features header
@@ -3219,6 +3220,16 @@ button.submit
     font-size: 2.2rem;
     line-height: 33px;
     line-height: 3.3rem;
+}
+
+.features img
+{
+    max-width: 200px;
+}
+
+.feature-block
+{
+    margin-bottom: 20px;
 }
 
 .partners
@@ -5306,6 +5317,16 @@ a.menu-title
         padding: 150px 0 75px 0;
     }
 
+    .features img
+    {
+        max-width: 100%;
+    }
+
+    .feature-block
+    {
+        margin-bottom: 0;
+    }
+
     .partners-list div
     {
         max-width: 50%;
@@ -5693,11 +5714,6 @@ a.menu-title
     .subFooter-legal
     {
         margin: 0;
-    }
-
-    .features
-    {
-        background-color: white;
     }
 
     .partners
