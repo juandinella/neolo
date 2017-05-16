@@ -1,0 +1,56 @@
+.text-page{
+  &_header{
+    padding: 15px 0;
+    background-color: $green;
+
+    h1{
+      @include font-size(2.8, 4.2);
+      color: white;
+
+      @include breakpoint(sm) {
+        @include font-size(3.8, 6.0);
+      }
+    }
+  }
+
+  &_section{
+    padding: 25px 0;
+    background-color: white;
+
+    h2{
+      @include font-size(2, 2.8);
+      margin-bottom: 10px;
+    }
+
+    article{
+      margin-bottom: 50px;
+
+      ul{
+        margin-left: 20px;
+        margin-bottom: 10px;
+
+        li{
+          list-style: disc;
+          margin-bottom: 5px;
+        }
+      }
+
+      p{
+        margin-bottom: 15px;
+      }
+
+      em,
+      strong{
+        font-weight: $bold;
+      }
+
+      a{
+        color: $green;
+
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
