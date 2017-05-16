@@ -4413,6 +4413,79 @@ a.menu-title
     background: rgba(76, 76, 76, .8);
 }
 
+.text-page_header
+{
+    padding: 15px 0;
+
+    background-color: #a3c220;
+}
+
+.text-page_header h1
+{
+    font-size: 28px;
+    font-size: 2.8rem;
+    line-height: 42px;
+    line-height: 4.2rem;
+
+    color: white;
+}
+
+.text-page_section
+{
+    padding: 25px 0;
+
+    background-color: white;
+}
+
+.text-page_section h2
+{
+    font-size: 20px;
+    font-size: 2rem;
+    line-height: 28px;
+    line-height: 2.8rem;
+
+    margin-bottom: 10px;
+}
+
+.text-page_section article
+{
+    margin-bottom: 50px;
+}
+
+.text-page_section article ul
+{
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.text-page_section article ul li
+{
+    margin-bottom: 5px;
+
+    list-style: disc;
+}
+
+.text-page_section article p
+{
+    margin-bottom: 15px;
+}
+
+.text-page_section article em,
+.text-page_section article strong
+{
+    font-weight: 700;
+}
+
+.text-page_section article a
+{
+    color: #a3c220;
+}
+
+.text-page_section article a:hover
+{
+    text-decoration: underline;
+}
+
 .heroDesktop
 {
     display: none;
@@ -5384,6 +5457,14 @@ a.menu-title
     .flags ul
     {
         width: 33%;
+    }
+
+    .text-page_header h1
+    {
+        font-size: 38px;
+        font-size: 3.8rem;
+        line-height: 60px;
+        line-height: 6rem;
     }
 
     .heroDesktop
