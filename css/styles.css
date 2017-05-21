@@ -4486,6 +4486,103 @@ a.menu-title
     text-decoration: underline;
 }
 
+.map
+{
+    padding: 50px 0;
+
+    text-align: center;
+
+    background-color: white;
+}
+
+.map h2
+{
+    margin-bottom: 20px;
+}
+
+.map-img
+{
+    height: 720px;
+}
+
+.screenshot header
+{
+    margin-bottom: 40px;
+}
+
+.screenshot header h2
+{
+    margin-bottom: 4px;
+}
+
+.screenshot .plus-block
+{
+    float: left;
+}
+
+.screenshot .plus-block .plus-img
+{
+    float: left;
+}
+
+.screenshot .plus-block .plus-icon
+{
+    margin-bottom: 0;
+}
+
+.screenshot .plus-block .plus-content
+{
+    margin-left: 85px;
+
+    text-align: left;
+}
+
+.screen-container
+{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+
+.screen-container:after
+{
+    display: block;
+    clear: both;
+
+    content: '';
+}
+
+.cpanel
+{
+    padding: 100px 0 50px 0;
+
+    background-color: white;
+}
+
+.cpanel-full
+{
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.edge
+{
+    position: absolute;
+    left: 50%;
+
+    display: none;
+    overflow: hidden;
+
+    margin-top: -8em;
+    padding-right: 0;
+}
+
+.edge img
+{
+    max-width: 720px;
+}
+
 .heroDesktop
 {
     display: none;
@@ -5465,6 +5562,27 @@ a.menu-title
         font-size: 3.8rem;
         line-height: 60px;
         line-height: 6rem;
+    }
+
+    .screen-container
+    {
+        padding: 0 10px;
+    }
+
+    .cpanel
+    {
+        padding: 200px 0 300px 0;
+    }
+
+    .cpanel-full
+    {
+        display: none;
+    }
+
+    .edge
+    {
+        display: -ms-flexbox;
+        display: flex;
     }
 
     .heroDesktop
