@@ -4858,9 +4858,14 @@ a.menu-title
 
 .home-blockCenter .btn
 {
-    width: 230px;
+    min-width: 230px;
 
     text-align: center;
+}
+
+.home-blockCenter .features
+{
+    border: 0 none;
 }
 
 .home-blockCenter.gray-bg
