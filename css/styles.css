@@ -4893,6 +4893,28 @@ a.menu-title
     color: black;
 }
 
+.home-blockCenter_privacidad
+{
+    margin-top: 50px;
+}
+
+.home-blockCenter_privacidad .improve-img
+{
+    height: 275px;
+    margin-top: 25px;
+}
+
+.home-blockCenter_privacidad .improve
+{
+    text-align: center;
+}
+
+.change-order
+{
+    -ms-flex-order: -1;
+    order: -1;
+}
+
 @media (min-width: 30em)
 {
     .col-xs-1
@@ -5576,7 +5598,7 @@ a.menu-title
 
     .cpanel
     {
-        padding: 200px 0 300px 0;
+        padding: 200px 0 75px 0;
     }
 
     .cpanel-full
@@ -5630,6 +5652,23 @@ a.menu-title
     .home-blockCenter
     {
         padding: 80px 0;
+    }
+
+    .home-blockCenter_privacidad .improve-img
+    {
+        height: 300px;
+        margin-top: 0;
+    }
+
+    .home-blockCenter_privacidad .improve
+    {
+        text-align: left;
+    }
+
+    .change-order
+    {
+        -ms-flex-order: 0;
+        order: 0;
     }
 }
 
