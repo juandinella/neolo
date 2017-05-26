@@ -1,0 +1,30 @@
+.home-blockCenter_privacidad{
+  margin-top: 50px;
+
+  .improve-img{
+    height: 275px;
+    margin-top: 25px;
+
+    @include breakpoint(sm) {
+      margin-top: 0;
+      height: 300px;
+    }
+  }
+
+  .improve{
+    text-align: center;
+
+    @include breakpoint(sm) {
+      text-align: left;
+    }
+  }
+}
+
+
+.change-order{
+  order: -1;
+
+  @include breakpoint(sm) {
+    order: 0;
+  }
+}
