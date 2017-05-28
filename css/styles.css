@@ -4560,7 +4560,8 @@ a.menu-title
     background-color: white;
 }
 
-.cpanel-full
+.cpanel-full,
+.whm-full
 {
     display: -ms-flexbox;
     display: flex;
@@ -4569,7 +4570,7 @@ a.menu-title
 .edge
 {
     position: absolute;
-    left: 50%;
+    right: 0;
 
     display: none;
     overflow: hidden;
@@ -4581,6 +4582,27 @@ a.menu-title
 .edge img
 {
     max-width: 720px;
+}
+
+.whm
+{
+    padding: 50px 0 10px 0;
+
+    border-top: 1px solid #dcdddf;
+    background-color: white;
+}
+
+.whm-ipad
+{
+    -ms-flex-order: 1;
+    order: 1;
+}
+
+.whm-ipad img
+{
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 0;
 }
 
 .heroDesktop
@@ -5598,10 +5620,11 @@ a.menu-title
 
     .cpanel
     {
-        padding: 200px 0 75px 0;
+        padding: 200px 0 40px 0;
     }
 
-    .cpanel-full
+    .cpanel-full,
+    .whm-full
     {
         display: none;
     }
@@ -5610,6 +5633,24 @@ a.menu-title
     {
         display: -ms-flexbox;
         display: flex;
+    }
+
+    .whm
+    {
+        padding: 50px 0 10px 0;
+    }
+
+    .whm-ipad
+    {
+        -ms-flex-order: 0;
+        order: 0;
+    }
+
+    .whm-ipad img
+    {
+        max-width: 743px;
+        margin-top: -11em;
+        margin-left: -200px;
     }
 
     .heroDesktop
