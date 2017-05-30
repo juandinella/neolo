@@ -1,0 +1,32 @@
+.compare{
+  background-color: white;
+
+  &-header{
+    text-align: left;
+    color: #FFF;
+    background-color: #D36248;
+    padding: 20px 0;
+  }
+
+  table{
+    border: 0 none;
+    color: $black;
+    width: 100%;
+    background-color: $gray;
+
+    td{
+      text-align: center;
+      width: 25%;
+      min-width: 100px;
+    }
+  }
+
+  &-row{
+    td{
+      &:first-child{
+        background-color: $orange;
+        color: white;
+      }
+    }
+  }
+}
