@@ -4605,6 +4605,13 @@ a.menu-title
     margin-top: 0;
 }
 
+.thanks
+{
+    padding: 100px 0;
+
+    text-align: center;
+}
+
 .heroDesktop
 {
     display: none;
