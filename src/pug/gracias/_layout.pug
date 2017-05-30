@@ -1,0 +1,41 @@
+doctype html
+html(lang='es')
+  head
+    meta(charset='utf-8')
+    meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0")
+    title Dominios, Hosting, Sitios web y Crecimiento - Neolo
+    link(rel='icon', href='https://img.neolo.com/2017/favicon.ico')
+    link(rel='icon', type='image/png', href='https://img.neolo.com/2017/favicon.png')
+    meta(name='theme-color', content='#9DBC19')
+    link(rel='stylesheet', href='css/styles.css')
+    
+    meta(name='description', content='Neolo ofrece herramientas para que puedas llevar tu idea a la web y alcanzar el máximo crecimiento digital. Dominios, hosting, sitios web y más.')
+    meta(rel='canonical', href='https://www.neolo.com/argentina/')  
+      
+    meta(name='og:title', content='Dominios, Hosting, Sitios web y Crecimiento - Neolo')
+    meta(name='og:description', content='Neolo ofrece herramientas para que puedas llevar tu idea a la web y alcanzar el máximo crecimiento digital. Dominios, hosting, sitios web y más.')  
+    meta(name='og:type', content='website')
+    meta(name='og:url', content='https://www.neolo.com/argentina/')      
+    meta(name='og:image', content='')      
+    meta(name='og:site_name', content='Neolo')
+    block head
+
+  body
+    div.is-hidden
+      include ../layouts/includes/svg.svg
+
+    include ../general/_mixins
+    include ../general/_topNav
+    include ../general/_header
+    include ../general/_overlay
+    include ../general/_sidebar
+    
+    block content
+      
+    include ../general/_footer
+    
+
+    script(src="js/vendor.js")
+    script(src='js/app.js')
+
+    block scripts
