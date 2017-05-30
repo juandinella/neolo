@@ -4642,12 +4642,62 @@ a.menu-title
     min-width: 100px;
 
     text-align: center;
+
+    border-right: 1px solid #c3c3c3;
+}
+
+.compare table td:first-of-type,
+.compare table td:last-of-type
+{
+    border: 0 none;
 }
 
 .compare-row td:first-child
 {
     color: white;
     background-color: #e4744e;
+}
+
+.compare-plan
+{
+    padding: 10px;
+}
+
+.compare-plan_wrapper
+{
+    padding: 10px;
+
+    border: 1px solid #eaedf0;
+    background-color: white;
+}
+
+.compare-plan_wrapper h5
+{
+    font-size: 1.125em;
+    font-weight: 600;
+
+    margin-bottom: 10px;
+    padding: 10px;
+
+    background-color: lightyellow;
+}
+
+.compare-plan_wrapper span
+{
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 14px;
+    line-height: 1.4rem;
+}
+
+.compare-plan_price
+{
+    font-size: 56px;
+    font-size: 5.6rem;
+    line-height: 56px;
+    line-height: 5.6rem;
+
+    margin: 10px 0;
 }
 
 .heroDesktop
