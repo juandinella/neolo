@@ -18,6 +18,12 @@
       text-align: center;
       width: 25%;
       min-width: 100px;
+      border-right: 1px solid #c3c3c3;
+
+      &:first-of-type,
+      &:last-of-type{
+        border: 0 none;
+      }
     }
   }
 
@@ -27,6 +33,33 @@
         background-color: $orange;
         color: white;
       }
+    }
+  }
+
+  &-plan{
+    padding: 10px;
+
+    &_wrapper{
+      background-color: white;
+      border: 1px solid $gray;
+      padding: 10px;
+
+      h5{
+        font-weight: 600;
+        font-size: 1.125em;
+        margin-bottom: 10px;
+        background-color: lightyellow;
+        padding: 10px;
+      }
+
+      span{
+        @include font-size(1.4,1.4);
+      }
+    }
+
+    &_price{
+      @include font-size(5.6, 5.6);
+      margin: 10px 0;
     }
   }
 }
