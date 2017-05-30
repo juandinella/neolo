@@ -4612,6 +4612,44 @@ a.menu-title
     text-align: center;
 }
 
+.compare
+{
+    background-color: white;
+}
+
+.compare-header
+{
+    padding: 20px 0;
+
+    text-align: left;
+
+    color: #fff;
+    background-color: #d36248;
+}
+
+.compare table
+{
+    width: 100%;
+
+    color: #4c4c4c;
+    border: 0 none;
+    background-color: #eaedf0;
+}
+
+.compare table td
+{
+    width: 25%;
+    min-width: 100px;
+
+    text-align: center;
+}
+
+.compare-row td:first-child
+{
+    color: white;
+    background-color: #e4744e;
+}
+
 .heroDesktop
 {
     display: none;
