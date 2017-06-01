@@ -4894,6 +4894,11 @@ a.menu-title
     color: #e4e4e4;
 }
 
+.newsletter-content .btn
+{
+    margin-bottom: 0;
+}
+
 .heroDesktop
 {
     display: none;
