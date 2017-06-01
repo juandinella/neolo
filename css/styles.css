@@ -1,7 +1,5 @@
 @charset 'UTF-8';
 
-/*$font: 'Work Sans', sans-serif;*/
-
 /* Slider */
 
 .slick-loading .slick-list
@@ -4821,6 +4819,79 @@ a.menu-title
     width: auto;
     min-width: auto;
     padding: 10px 0;
+}
+
+.newsletter
+{
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 50px 0;
+
+    background-color: #5c3ddf;
+}
+
+.newsletter header h2,
+.newsletter header p
+{
+    text-align: center;
+
+    color: white;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .25);
+}
+
+.newsletter header h2
+{
+    font-family: 'dinmedium', Helvetica, Arial, sans-serif;
+}
+
+.newsletter section
+{
+    margin-top: 30px;
+
+    text-align: center;
+}
+
+.newsletter-content input
+{
+    width: 100%;
+    height: 40px;
+    padding-left: 15px;
+
+    border: 1px solid #4121c8;
+}
+
+.newsletter-content input::-webkit-input-placeholder
+{
+    font-style: italic;
+    /* Chrome/Opera/Safari */
+
+    color: #e4e4e4;
+}
+
+.newsletter-content input::-moz-placeholder
+{
+    font-style: italic;
+    /* Firefox 19+ */
+
+    color: #e4e4e4;
+}
+
+.newsletter-content input:-ms-input-placeholder
+{
+    font-style: italic;
+    /* IE 10+ */
+
+    color: #e4e4e4;
+}
+
+.newsletter-content input:-moz-placeholder
+{
+    font-style: italic;
+    /* Firefox 18- */
+
+    color: #e4e4e4;
 }
 
 .heroDesktop
