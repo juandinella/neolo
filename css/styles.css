@@ -4853,6 +4853,64 @@ a.menu-title
     text-align: center;
 }
 
+.newsletter--icons
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: .75;
+}
+
+.newsletter--icons__1
+{
+    position: absolute;
+    top: 180px;
+    left: -30px;
+}
+
+.newsletter--icons__2
+{
+    position: absolute;
+    top: -89px;
+    left: 125px;
+}
+
+.newsletter--icons__3
+{
+    position: absolute;
+    right: 200px;
+    bottom: -97px;
+}
+
+.newsletter--icons__4
+{
+    position: absolute;
+    top: 50px;
+    right: 15px;
+}
+
+.newsletter--icons__5
+{
+    position: absolute;
+    right: 26px;
+    bottom: -135px;
+}
+
+.newsletter--icons__6
+{
+    position: absolute;
+    bottom: -135px;
+    left: 210px;
+}
+
 .newsletter-content input
 {
     width: 100%;
@@ -5947,6 +6005,11 @@ a.menu-title
         margin-left: -200px;
     }
 
+    .newsletter--icons
+    {
+        display: block;
+    }
+
     .heroDesktop
     {
         display: block;
@@ -6519,6 +6582,27 @@ a.menu-title
     .clients .arrowPrev
     {
         left: 18%;
+    }
+
+    .newsletter--icons__1
+    {
+        top: 92px;
+        left: 30px;
+    }
+
+    .newsletter--icons__2
+    {
+        left: 294px;
+    }
+
+    .newsletter--icons__3
+    {
+        right: 325px;
+    }
+
+    .newsletter--icons__4
+    {
+        right: 100px;
     }
 
     .home-block_content
