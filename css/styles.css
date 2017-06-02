@@ -4957,36 +4957,46 @@ a.menu-title
     margin-bottom: 0;
 }
 
-.badges-list
-{
-    display: -ms-flexbox;
-    display: flex;
+/*.badges-list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-}
+  div{
+    display: inline-block;
 
-.badges-list div
-{
-    display: -ms-flexbox;
-    display: flex;
-
+    flex-basis: 50%;
     max-width: 50%;
+    text-align: center;
     margin: 10px 0;
     padding: 15px;
 
-    text-align: center;
+    @include breakpoint(sm) {
+      flex-basis: 50%;
+      max-width: 50%;
+      padding: 0;
+    }
 
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
+    @include breakpoint(md) {
+      flex-basis: 25%;
+      max-width: 25%;
+    }
+  }
+
+  img{
+    max-width: 250px;
+  }
+}*/
+
+.badges-list div
+{
+    display: inline-block;
+    float: left;
+
+    width: 50%;
+    margin: 10px 0;
+    padding: 15px 0;
 }
 
 .badges-list img
@@ -6047,15 +6057,6 @@ a.menu-title
         display: block;
     }
 
-    .badges-list div
-    {
-        max-width: 50%;
-        padding: 0;
-
-        -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-    }
-
     .heroDesktop
     {
         display: block;
@@ -6448,10 +6449,7 @@ a.menu-title
 
     .badges-list div
     {
-        max-width: 25%;
-
-        -ms-flex-preferred-size: 25%;
-        flex-basis: 25%;
+        width: 25%;
     }
 
     .home-block_content
