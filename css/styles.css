@@ -4957,6 +4957,43 @@ a.menu-title
     margin-bottom: 0;
 }
 
+.badges-list
+{
+    display: -ms-flexbox;
+    display: flex;
+
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.badges-list div
+{
+    display: -ms-flexbox;
+    display: flex;
+
+    max-width: 50%;
+    margin: 10px 0;
+    padding: 15px;
+
+    text-align: center;
+
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+}
+
+.badges-list img
+{
+    max-width: 250px;
+}
+
 .heroDesktop
 {
     display: none;
@@ -6010,6 +6047,15 @@ a.menu-title
         display: block;
     }
 
+    .badges-list div
+    {
+        max-width: 50%;
+        padding: 0;
+
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    }
+
     .heroDesktop
     {
         display: block;
@@ -6398,6 +6444,14 @@ a.menu-title
     .sidebar
     {
         width: 367px;
+    }
+
+    .badges-list div
+    {
+        max-width: 25%;
+
+        -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
     }
 
     .home-block_content
