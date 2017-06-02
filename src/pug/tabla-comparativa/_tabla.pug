@@ -1,4 +1,4 @@
-section.compare
+section.compare#pricing
   .compare-wrap
     .compare-header
       .container
@@ -19,13 +19,13 @@ section.compare
               .compare-plan_wrapper
                 h5 Plan ilimitado
                 h6 Al mes desde 
-                p.compare-plan_price $57
+                p.compare-plan_price $39
                 span + IVA. Pago anual
             td.compare-plan
               .compare-plan_wrapper
                 h5 Plan ilimitado
                 h6 Al mes desde 
-                p.compare-plan_price $57
+                p.compare-plan_price $31
                 span + IVA. Pago anual
             
     .compare-header
@@ -37,31 +37,354 @@ section.compare
         tbody
           tr
             td
+              span.toolTip(data-tooltip="Es el nombre con el que se identifican los sitios web en Internet, por ejemplo NEOLO.COM JUAN.COM MARIA.COM") ?
+              | Dominios                
+            td Ilimitados
+            td 1
+            td 1
+          tr
+            td
               span.toolTip(data-tooltip="El Creador Web permite construir tu sitio web en menos de 5 minutos de forma fácil, rápida y profesional.") ?
-              | Creador Web                
+              | Creador Web
+            td Si
             td Si
             td No
+          tr
+            td
+              span.toolTip(data-tooltip="Es la cantidad de espacio disponible en tu plan de web hosting para poder subir archivos, generar bases de datos, almacenar correos en tus cuentas de mail, etc.") ?
+              | Espacio 
+            td Ilimitado
+            td Ilimitado
+            td Ilimitado
+          tr
+            td
+              span.toolTip(data-tooltip="Cada vez que un visitante ingresa a tu sitio web, se transfiere el contenido hacia su pantalla, esta cantidad de información es la transferencia.") ?
+              | Transferencia
+            td Ilimitada
+            td Ilimitada
+            td Ilimitada
+          tr
+            td
+              span.toolTip(data-tooltip="Es un nombre que se antepone al dominio, por ejemplo VENTAS.NEOLO.COM PANEL.JUAN.COM TIENDA.MIMARCA.COM") ?
+              | Subdominios
+            td Ilimitados
+            td Ilimitados
+            td Ilimitados
+          tr
+            td
+              span.toolTip(data-tooltip="Las necesitarás si deseas instalar aplicaciones de blogs, ecommerce, plataformas educativas como Wordpress, Joomla, Magento, entre otras, o para crear tus propios scripts. ") ?
+              | Bases de datos MySQL  
+            td Ilimitadas
+            td Ilimitadas
             td No
           tr
             td
-              span.toolTip(data-tooltip="Es la cantidad de espacio disponible en tu plan de web hosting para poder subir archivos, generar bases de datos, almacenar correos en tus cuentas de mail, etc.") ?
-              | Espacio en Disco  
+              span.toolTip(data-tooltip="Es la plataforma ideal para que puedas gestionar tus bases de datos.") ?
+              | phpMyAdmin
+            td Ilimitado
+            td Ilimitado
+            td Ilimitado
+          tr
+            td
+              span.toolTip(data-tooltip="Direcciones de email NOMBRE@TUDOMINIO.COM, puedes crear todas las que desees anteponiendo cualquier palabra a tu dominio.") ?
+              | Cuentas de correo
+            td Ilimitadas
+            td Ilimitadas
+            td Ilimitadas
+          tr
+            td
+              span.toolTip(data-tooltip="Serán utilizadas para subir tu sitio web a tu cuenta de hosting.") ?
+              | Cuentas de FTP
+            td Ilimitadas
+            td Ilimitadas
+            td Ilimitadas
+          tr
+            td
+              span.toolTip(data-tooltip="El lenguaje de programación más utilizado en el mundo, con él podrás instalar scripts o crear tus mismos programas web.") ?
+              | PHP 
+            td Ilimitado
+            td Ilimitado
+            td Ilimitado
+          tr
+            td
+              span.toolTip(data-tooltip="cPanel es el panel de control de tu cuenta de hosting, desde donde podrás administrar tu sitio, las cuentas de mail, cuentas de FTP, etc. Accede al cPanel desde cualquier dispositivo. Por motivos de seguridad y performance siempre mantenemos cPanel actualizado a su última versión.") ?
+              | cPanel
+            td Si
+            td Si
+            td Si
+          tr
+            td
+              span.toolTip(data-tooltip="Instala más de 200 aplicaciones con sólo 1 clic desde el cPanel de tu sitio web con Fantastico o Softaculous.") ?
+              | +200 apps autoinstalables  
+            td Si
+            td Si
+            td Si
+          tr
+            td
+              span.toolTip(data-tooltip="Instalación rápida y automática. Miles de clientes utilizan WordPress en Neolo") ?
+              | Compatible WordPress
+            td Si
+            td Si
+            td No
+          tr
+            td
+              span.toolTip(data-tooltip="Desde la opción Cloudflare de tu cPanel podrás activar certificados SSL de manera gratuita y tu sitio web funcionará seguro con https. Además te beneficiarás de un mejor posicionamiento SEO en buscadores.") ?
+              | SSL 
+            td Ilimitado
+            td Ilimitado
+            td Ilimitado
+          tr
+            td
+              span.toolTip(data-tooltip="Nuestros técnicos están siempre a disposición para ayudarte con todos los problemas que puedan surgir.") ?
+              | Soporte técnico
+            td Ilimitado
+            td Ilimitado
+            td Ilimitado
+          tr
+            td
+              span.toolTip(data-tooltip="Al minuto de acreditado el pago, la plataforma de Neolo creará tu cuenta de hosting y te enviará los datos de acceso por email.") ?
+              | Creación instantánea de cuenta
+            td Si
+            td Si
+            td Si
+          tr
+            td
+              span.toolTip(data-tooltip="Agregamos a Google, Yahoo! y Bing tus sitios web. ") ?
+              | Alta en buscadores
+            td Si
+            td Si
+            td Si
+          tr
+            td
+              span.toolTip(data-tooltip="Facilitamos accesos a tutoriales sobre cPanel, Diseño Web, Programación Web, Marketing online y mucho más.") ?
+              | +500 tutoriales
+            td Si
+            td Si
+            td Si
+          tr
+            td
+              span.toolTip(data-tooltip="Migramos tu cuenta hacia los servidores de Neolo.") ?
+              | Migración de cuenta
+            td Si
+            td Si
+            td Si
+          tr
+            td
+              span.toolTip(data-tooltip="Los sitios web de todos los clientes son escaneados en busca de virus.") ?
+              | Antivirus
+            td Si
+            td Si
+            td Si
+          tr
+            td
+              span.toolTip(data-tooltip="Los dominios adicionales se configuran desde cPanel y permiten crear diferentes sitios web, cada uno independiente del otro y con su propio nombre de dominio. También nos posibilita la opción de crear cuentas de e-mail ilimitadas con cada uno de los dominios.") ?
+              | Dominios adicionales
+            td Ilimitados
+            td No
+            td No
+          tr
+            td
+              span.toolTip(data-tooltip="Facilitan el acceso a un sitio web desde diferentes nombres de dominio. Inclusive habilita la creación de cuentas de mail ilimitadas con cada uno de los dominios.") ?
+              | Dominios apuntados
+            td Ilimitados
+            td Ilimitados
+            td Ilimitados
+          tr
+            td
+              span.toolTip(data-tooltip="Si tenés múltiples dominios, redireccionalos entre ellos según necesites y te sea conveniente. ") ?
+              | Redirecciones
+            td Ilimitados
+            td Ilimitados
+            td Ilimitados
+          tr
+            td
+              span.toolTip(data-tooltip="Modifica las zonas o entradas DNS de tus cuentas de hosting directamente desde tu panel de cliente cPanel.") ?
+              | Editor de zona DNS
+            td Ilimitado
+            td Ilimitado
+            td Ilimitado
+          tr
+            td
+              span.toolTip(data-tooltip="Accede las 24 horas desde cualquier parte del mundo a tu webmail.") ?
+              | Acceso Webmail
             td Ilimitado
             td Ilimitado
             td Ilimitado
           tr
             td
               span.toolTip(data-tooltip="Es la cantidad de espacio disponible en tu plan de web hosting para poder subir archivos, generar bases de datos, almacenar correos en tus cuentas de mail, etc.") ?
-              | cPanel 
+              | Antispam Boxtrapper 
+            td Ilimitado
+            td Ilimitado
+            td Ilimitado
+          tr
             td
-              svg(class="icon tick")
-                use(xlink:href="#tick")
+              span.toolTip(data-tooltip="Bloquea y elimina el spam que ingresa en tu cuenta.") ?
+              | Antispam SpamAssasin
+            td Ilimitado
+            td Ilimitado
+            td Ilimitado
+          tr
             td
-              svg(class="icon tick")
-                use(xlink:href="#tick")
-            td 
-              svg(class="icon cross")
-                use(xlink:href="#cross")
+              span.toolTip(data-tooltip="Cuando te envíen un email podrás responder automáticamente en caso que lo desees.") ?
+              | Auto-respuestas
+            td Ilimitado
+            td Ilimitado
+            td Ilimitado
+          tr
+            td
+              span.toolTip(data-tooltip="Con esta funcionalidad, podrán enviarte a cualquiernombre@tudominio y el correo siempre te llegará a tu cuenta por defecto.") ?
+              | Dirección por defecto 
+            td Ilimitado
+            td Ilimitado
+            td Ilimitado
+          tr
+            td
+              span.toolTip(data-tooltip="Configurá filtros y reglas en tus cuentas de correo.") ?
+              | Filtros a nivel cuenta 
+            td Ilimitado
+            td Ilimitado
+            td Ilimitado
+          tr
+            td
+              span.toolTip(data-tooltip="Configura filtros y reglas en tus cuentas de correo.") ?
+              | Filtros a nivel usuario 
+            td Ilimitado
+            td Ilimitado
+            td Ilimitado
+          tr
+            td
+              span.toolTip(data-tooltip="Con un par de clics podrás saber el recorrido que realiza tu correo para diagnosticar si está funcionando correctamente.") ?
+              | Seguimiento de correos 
+            td Ilimitado
+            td Ilimitado
+            td Ilimitado
+          tr
+            td
+              span.toolTip(data-tooltip="Importa correos y contactos a tus cuentas de email.") ?
+              | Importación de correos
+            td Ilimitado
+            td Ilimitado
+            td Ilimitado
+          tr
+            td
+              span.toolTip(data-tooltip="Edita las SPF y DKIM desde tu cPanel. Fácil y rápido.") ?
+              | DKIM & SPF
+            td Ilimitado
+            td Ilimitado
+            td Ilimitado
+          tr
+            td
+              span.toolTip(data-tooltip="Podrás modificar las entradas MX desde tu propio cPanel. Fundamental si deseas utilizar por ejemplo, Google Apps.") ?
+              | Modificación MX
+            td Ilimitado
+            td Ilimitado
+            td Ilimitado
+          tr
+            td
+              span.toolTip(data-tooltip="Realiza copias de seguridad de tu cuenta cuando desees.") ?
+              | Backups 
+            td On-demand
+            td On-demand
+            td On-demand
+          tr
+            td
+              span.toolTip(data-tooltip="Analiza el tráfico que ingresa a tu sitio web con esta fantástica herramienta.") ?
+              | Estadísticas awStats
+            td Ilimitadas
+            td Ilimitadas
+            td Ilimitadas
+          tr
+            td
+              span.toolTip(data-tooltip="Si algo falla en tu sitio web, podrás verlo en el histórico de registro de errores.") ?
+              | Registro de errores 
+            td Ilimitados
+            td Ilimitados
+            td Ilimitados
+          tr
+            td
+              span.toolTip(data-tooltip="Mide la cantidad de ancho de banda o transferencia consumida y en qué fue consumida.") ?
+              | Medidor de transferencia
+            td Si
+            td Si
+            td Si
+          tr
+            td
+              span.toolTip(data-tooltip="Mide cuánta CPU estás consumiendo con tu cuenta.") ?
+              | Medidor de CPU  
+            td Si
+            td Si
+            td Si
+          tr
+            td
+              span.toolTip(data-tooltip="Instala el código de Google Analytics.") ?
+              | Google Analytics
+            td Si
+            td Si
+            td Si
+          tr
+            td
+              span.toolTip(data-tooltip="Asegura directorios o partes de tu sitio web con usuario y contraseña") ?
+              | Directorios con contraseña
+            td Ilimitado
+            td Ilimitado
+            td Ilimitado
+          tr
+            td
+              span.toolTip(data-tooltip="Bloquea ciertas IP para que no puedan acceder a tu sitio web.") ?
+              | Bloqueos por IP
+            td Ilimitados
+            td Ilimitados
+            td Ilimitados
+          tr
+            td
+              span.toolTip(data-tooltip="Evita que otros sitios web copien tus imágenes.") ?
+              | Protección HotLink
+            td Ilimitadas
+            td Ilimitadas
+            td Ilimitadas
+          tr
+            td
+              span.toolTip(data-tooltip="Evita que otros sitios web copien tus imágenes.") ?
+              | Protección Leech 
+            td Ilimitadas
+            td Ilimitadas
+            td Ilimitadas
+          tr
+            td
+              span.toolTip(data-tooltip="WHM es Web Hosting Manager. El panel #1 para gestionar clientes de hosting.") ?
+              | WHM
+            td No
+            td No
+            td No
+          tr
+            td
+              span.toolTip(data-tooltip="Programa y configura cronjobs desde tu cPanel") ?
+              | Cron Jobs 
+            td Ilimitados
+            td Ilimitados
+            td Ilimitados
+          tr
+            td
+              span.toolTip(data-tooltip="Configura SSL con las distintas opciones que ofrecemos para tu sitio web.") ?
+              | SSL + IP dedicada 
+            td Opcional
+            td Opcional
+            td Opcional
+          tr
+            td
+              span.toolTip(data-tooltip="Utiliza Google Apps junto a tu sitio web en Neolo.") ?
+              | Google Apps
+            td Opcional
+            td Opcional
+            td Opcional
+          tr
+            td
+              span.toolTip(data-tooltip="Utiliza Office 365 junto a tu sitio web en Neolo.") ?
+              | Office 365 
+            td Opcional
+            td Opcional
+            td Opcional
           
     .compare-header
       .container
@@ -83,13 +406,13 @@ section.compare
               .compare-plan_wrapper
                 h5 Plan ilimitado
                 h6 Al mes desde 
-                p.compare-plan_price $57
+                p.compare-plan_price $39
                 span + IVA. Pago anual
-                a.btn(href="https://ar.neolo.com/cart.php?a=add&pid=4&carttpl=cart", title="") Comprar
+                a.btn(href="https://ar.neolo.com/cart.php?a=add&pid=3&carttpl=cart", title="") Comprar
             td.compare-plan.table-12
               .compare-plan_wrapper
                 h5 Plan ilimitado
                 h6 Al mes desde 
-                p.compare-plan_price $57
+                p.compare-plan_price $31
                 span + IVA. Pago anual
-                a.btn(href="https://ar.neolo.com/cart.php?a=add&pid=4&carttpl=cart", title="") Comprar
+                a.btn(href="https://ar.neolo.com/cart.php?a=add&pid=2&carttpl=cart", title="") Comprar
