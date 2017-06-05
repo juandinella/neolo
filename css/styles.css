@@ -3201,6 +3201,13 @@ button.submit
     background-color: white;
 }
 
+.features .plus-icon
+{
+    float: none;
+
+    margin: 0 auto;
+}
+
 .features header
 {
     margin-bottom: 50px;
@@ -3462,6 +3469,7 @@ button.submit
 .client-slide_content h5
 {
     color: white;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
 }
 
 .client-slide_content h4
@@ -3628,13 +3636,6 @@ button.submit
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
-}
-
-.optimization-test
-{
-    padding-bottom: 25px;
-
-    border-bottom: 1px solid #e4e4e4;
 }
 
 .optimization-form
@@ -4956,38 +4957,6 @@ a.menu-title
 {
     margin-bottom: 0;
 }
-
-/*.badges-list{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-
-  div{
-    display: inline-block;
-
-    flex-basis: 50%;
-    max-width: 50%;
-    text-align: center;
-    margin: 10px 0;
-    padding: 15px;
-
-    @include breakpoint(sm) {
-      flex-basis: 50%;
-      max-width: 50%;
-      padding: 0;
-    }
-
-    @include breakpoint(md) {
-      flex-basis: 25%;
-      max-width: 25%;
-    }
-  }
-
-  img{
-    max-width: 250px;
-  }
-}*/
 
 .badges-list div
 {
