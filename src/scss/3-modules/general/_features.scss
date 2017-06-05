@@ -8,6 +8,11 @@
     padding: 150px 0 75px 0;
   }
 
+  .plus-icon{
+    float: none;
+    margin: 0 auto;
+  }
+
 
   header{
     margin-bottom: 50px;
@@ -33,7 +38,7 @@
 
 .feature-block{
   margin-bottom: 20px;
-  
+
   @include breakpoint(sm) {
     margin-bottom: 0;
   }
