@@ -7,21 +7,21 @@ section.pricing#sysadmin
           p Cada organización tiene objetivos distintos. Por eso es importante que te comuniques con nosotros. Charlá e intercambiá ideas con un experto en IT sobre cuales son las necesidades de tu negocio. Te prepararemos un presupuesto en menos de 24 horas para que podamos trabajar juntos.
         .row
           .col-sm-10.col-sm-offset-1
-            form.row(method="POST" action="https://www.neolo.com/argentian/formulario.php")
+            form.row(method="POST" action="https://www.neolo.com/argentina/formulario.php")
               .col-sm-6
                 .input-group
                   label(form='name') Nombre y apellido
-                  input(type="text", placeholder='' id='name' required)
+                  input(type="text", placeholder='' name='name' required)
                 .input-group
                   label(form='email') Email
-                  input(type="email", placeholder='' id='email' required)
+                  input(type="email", placeholder='' name='email' required)
                 .input-group
                   label(form='phone') Teléfono de contacto
-                  input(type="text", placeholder='' id='phone' required)
+                  input(type="text", placeholder='' name='phone' required)
               .col-sm-6
                 .input-group
                   label(form='textarea') ¿En qué te podemos ayudar?
-                  textarea(id='textarea' required)
+                  textarea(name='textarea' required)
               button.btn.btn_orange.submit(type='submit') Enviar consulta
 
 

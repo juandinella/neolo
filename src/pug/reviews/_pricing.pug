@@ -7,19 +7,19 @@ section.pricing
           p Empezá hoy mismo a recolectar opiniones de tus clientes, generar confianza en tu marca y lograr más ventas.
         .row
           .col-sm-10.col-sm-offset-1
-            form.row(method="POST" action="https://www.neolo.com/argentian/formulario.php")
+            form.row(method="POST" action="https://www.neolo.com/argentina/formulario.php")
               .col-sm-6
                 .input-group
                   label(form='name') Nombre y apellido
-                  input(type="text", placeholder='' id='name' required)
+                  input(type="text", placeholder='' name='name' required)
                 .input-group
                   label(form='email') Email
-                  input(type="email", placeholder='' id='email' required)
+                  input(type="email", placeholder='' name='email' required)
                 .input-group
                   label(form='phone') Teléfono de contacto
-                  input(type="text", placeholder='' id='phone' required)
+                  input(type="text", placeholder='' name='phone' required)
               .col-sm-6
                 .input-group
                   label(form='textarea') ¿En qué te podemos ayudar?
-                  textarea(id='textarea' required)
+                  textarea(name='textarea' required)
               button.btn.btn_orange.submit(type='submit') Enviar consulta
