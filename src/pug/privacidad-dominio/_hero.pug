@@ -6,9 +6,10 @@ section.hero.hero-section.heroDomian.custom-background(data-background='img/hero
           header
             h1 Registrá tu dominio con protección de identidad:
           section
-            form(method="", action="")
+            form(method="post", action="https://ar.neolo.com/domainchecker.php")
+              input(type="hidden", name='direct' value='true')
               .input-group
-                input(type="text", placeholder='' required)
+                input(type="text", name='domain' placeholder='' required)
                 button.btn.btn_orange(type='submit') Buscar
             ul
               li #[span Adicional a tu dominio:] $200 / año
