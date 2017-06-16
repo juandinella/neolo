@@ -1,0 +1,41 @@
+doctype html
+html(lang='es')
+  head
+    meta(charset='utf-8')
+    //- base(href="http://argentinav2.neolo.com/")
+    meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0")
+    title Login - Neolo
+    link(rel='icon', href='https://img.neolo.com/2017/favicon.ico')
+    link(rel='icon', type='image/png', href='https://img.neolo.com/2017/favicon.png')
+    meta(name='theme-color', content='#9DBC19')
+    link(rel='stylesheet', href='css/styles.css')
+    
+    meta(name='description', content='Gana dinero recomendando a Neolo. Comparte el mejor hosting con tus amigos y conocidos y genera dinero todos los meses.')
+    meta(rel='canonical', href='https://www.neolo.com/argentina/afiliados/')  
+      
+    meta(name='og:title', content='Afiliados - Neolo')
+    meta(name='og:description', content='Gana dinero recomendando a Neolo. Comparte el mejor hosting con tus amigos y conocidos y genera dinero todos los meses.')  
+    meta(name='og:type', content='website')
+    meta(name='og:url', content='https://www.neolo.com/argentina/afiliados/')      
+    meta(name='og:image', content='')      
+    meta(name='og:site_name', content='Neolo')      
+
+
+    block head
+
+  body
+    div.is-hidden
+      include ../layouts/includes/svg.svg
+
+    include ../general/_mixins
+
+    block content
+      
+
+    script(src="js/vendor.js")
+    script(src='js/app.js')
+    
+    noscript
+      img(height='1', width='1', alt='', style='display:none', src='https://www.facebook.com/tr?id=732285840138667&ev=PixelInitialized')
+
+    block scripts

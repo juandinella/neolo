@@ -1,0 +1,125 @@
+.login-page{
+  height: 100%;
+  position: relative;
+
+  @include breakpoint(sm) {
+    height: 100vh;
+  }
+
+  &:after{
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: rgba($black, 0.25);
+  }
+
+  .container{
+    position: relative;
+    z-index: 3;
+  }
+
+  &--logo{
+    display: block;
+  }
+
+  header{
+    margin: 0 auto;
+    margin-top: 60px;
+    text-align: center;
+
+    h3{
+      margin-top: 8px;
+      color: white;
+      font-family: $fontMedium;
+      text-shadow: 0 0 4px rgba(0,0,0,0.50);
+      @include font-size(1.8,1.8);
+    }
+  }
+
+  section{
+    margin-top: 75px;
+
+    @include breakpoint(sm) {
+      margin-top: 100px;
+    }
+  }
+}
+
+
+.login-block{
+  text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 50px;
+  overflow: hidden;
+
+  &--img{
+    background-color: $main-color;
+    border-radius: 100px;
+    width: 65px;
+    height: 65px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+
+    svg{
+      color: white;
+      height: 65px;
+    }
+
+    .mail{
+      width: 65px;
+    }
+
+    .cPanel{
+      width: 45px;
+    }
+
+    .dinero{
+      width: 30px;
+    }
+
+    .whm-icon{
+      width: 45px;
+    }
+  }
+
+  h5{
+    color: white;
+    font-family: $fontMedium;
+    text-shadow: 0 0 4px rgba(0,0,0,0.50);
+    @include font-size(1.8,1.8);
+  }
+
+  form{
+    margin-top: 20px;
+  }
+
+  input{
+    width: 100%;
+  }
+
+  .btn{
+    background-color: $main-color;
+    transition: all 0.225s ease;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    min-width: 100%;
+    margin: 0 auto;
+
+    &:hover{
+      background-color: darken($main-color, 5%);
+    }
+  }
+
+  &__facturacion{
+    .btn{
+      margin-top: 0;
+
+      @include breakpoint(sm) {
+        margin-top: 75px;
+      }
+    }
+  }
+}

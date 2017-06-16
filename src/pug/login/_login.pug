@@ -1,0 +1,49 @@
+section.login-page.custom-background(data-background='img/login.jpg', data-background-position='50%')
+  .container
+    .row
+      .col-xs-12
+        header
+          a.login-page--logo(href="/", title="Index Neolo")
+            img(src="img/logo.svg", alt="Logo Neolo")
+          h3 Una pantalla. Todos los accesos
+    section.row
+      .col-sm-6.col-md-3
+        .login-block
+          .login-block--img
+            svg(class="icon mail")
+              use(xlink:href="#mail")
+          h5 Webmail
+          form(method="", action="")
+            .input-group
+              input(type="email", placeholder="Email")
+            button.btn(type="submit") Ingresar
+      .col-sm-6.col-md-3
+        .login-block
+          .login-block--img
+            svg(class="icon cPanel")
+              use(xlink:href="#cPanel")
+          h5 cPanel
+          form(method="", action="")
+            .input-group
+              input(type="text", placeholder="Tu domínio")
+            button.btn(type="submit") Ingresar
+      .col-sm-6.col-md-3
+        .login-block
+          .login-block--img
+            svg(class="icon whm-icon")
+              use(xlink:href="#whm-icon")
+          h5 WHM
+          form(method="", action="")
+            .input-group
+              input(type="text", placeholder="Tu domínio")
+            button.btn(type="submit") Ingresar
+      .col-sm-6.col-md-3
+        .login-block.login-block__facturacion
+          .login-block--img
+            svg(class="icon dinero")
+              use(xlink:href="#dinero")
+          h5 Facturación
+          form(method="", action="")
+            .input-group
+            button.btn(type="submit") Ingresar
+      
